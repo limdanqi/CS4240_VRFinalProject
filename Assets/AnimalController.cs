@@ -16,7 +16,7 @@ public class AnimalController : MonoBehaviour
         
     }
 
-    public void OnSelectEntered()
+    public void OnSelectExited()
     {
         Destroy(gameObject);
     }

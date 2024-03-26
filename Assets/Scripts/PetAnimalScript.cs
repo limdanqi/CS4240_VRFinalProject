@@ -10,6 +10,7 @@ public class PetAnimalScript : MonoBehaviour
     public float petRadius;
     public LayerMask animalMask;
 
+    private GameObject currentAnimal;
     private Animator currAnimalAnimator;
     private bool isPetting;
 
@@ -66,6 +67,12 @@ public class PetAnimalScript : MonoBehaviour
                 }
             }
             GameObject currPettingObj = hits[closestHit].transform.gameObject;
+            currentAnimal = currPettingObj;
+            ParticleSystem currentAnimalParticleSystem = currentAnimal.GetComponentInChildren<ParticleSystem>();
+            if (currentAnimalParticleSystem != null && !currentAnimalParticleSystem.isPlaying) {
+                currentAnimalParticleSystem.Play();
+            }
+            
             currAnimalAnimator = currPettingObj.GetComponent<Animator>();
 
             currAnimalAnimator.SetBool("IsPetting", true);
@@ -78,6 +85,13 @@ public class PetAnimalScript : MonoBehaviour
         if (currAnimalAnimator != null)
         {
             currAnimalAnimator.SetBool("IsPetting", false);
+            ParticleSystem currentAnimalParticleSystem = currentAnimal.GetComponentInChildren<ParticleSystem>();
+            if (currentAnimalParticleSystem != null && currentAnimalParticleSystem.isPlaying)
+            {
+                currentAnimalParticleSystem.Stop();
+            }
+
+            
         }
         
     }

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4938284502189777980}
   - component: {fileID: 4938284502189777983}
   - component: {fileID: 4938284502189777982}
+  - component: {fileID: 1600805551567857732}
   m_Layer: 0
   m_Name: Interactable Gecko
   m_TagString: Untagged
@@ -203,6 +204,20 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!114 &1600805551567857732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4938284502189777971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b46256c0f0532b4cacf1389ad7ea094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactableComponent: {fileID: 4938284502189777982}
+  animatorObject: {fileID: 7270775683716552453}
 --- !u!1001 &4184882137695387059
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -210,6 +225,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4938284502189777980}
     m_Modifications:
+    - target: {fileID: 1376846268370933891, guid: cefda5744f2acb54d8f08973a10bee1e, type: 3}
+      propertyPath: m_Size.x
+      value: 0.6702132
+      objectReference: {fileID: 0}
+    - target: {fileID: 1376846268370933891, guid: cefda5744f2acb54d8f08973a10bee1e, type: 3}
+      propertyPath: m_Size.y
+      value: 0.70125204
+      objectReference: {fileID: 0}
+    - target: {fileID: 1376846268370933891, guid: cefda5744f2acb54d8f08973a10bee1e, type: 3}
+      propertyPath: m_Size.z
+      value: 1.5309874
+      objectReference: {fileID: 0}
+    - target: {fileID: 1376846268370933891, guid: cefda5744f2acb54d8f08973a10bee1e, type: 3}
+      propertyPath: m_Center.x
+      value: 0.0012845993
+      objectReference: {fileID: 0}
+    - target: {fileID: 1376846268370933891, guid: cefda5744f2acb54d8f08973a10bee1e, type: 3}
+      propertyPath: m_Center.y
+      value: 0.27668223
+      objectReference: {fileID: 0}
+    - target: {fileID: 1376846268370933891, guid: cefda5744f2acb54d8f08973a10bee1e, type: 3}
+      propertyPath: m_Center.z
+      value: -0.059115827
+      objectReference: {fileID: 0}
     - target: {fileID: 6842458599697738422, guid: cefda5744f2acb54d8f08973a10bee1e, type: 3}
       propertyPath: m_Name
       value: Gecko
@@ -265,6 +304,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7979196013395532419, guid: cefda5744f2acb54d8f08973a10bee1e, type: 3}
   m_PrefabInstance: {fileID: 4184882137695387059}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7270775683716552453 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6842458599697738422, guid: cefda5744f2acb54d8f08973a10bee1e, type: 3}
+  m_PrefabInstance: {fileID: 4184882137695387059}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5781192969322160400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -275,6 +319,10 @@ PrefabInstance:
     - target: {fileID: 3774509235512974894, guid: eb9104ef66b7305468adb3697fdeed5e, type: 3}
       propertyPath: m_Name
       value: Interaction Affordance
+      objectReference: {fileID: 0}
+    - target: {fileID: 3774509235512974894, guid: eb9104ef66b7305468adb3697fdeed5e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5258331117553129771, guid: eb9104ef66b7305468adb3697fdeed5e, type: 3}
       propertyPath: m_RootOrder
@@ -323,6 +371,10 @@ PrefabInstance:
     - target: {fileID: 7396278978564332023, guid: eb9104ef66b7305468adb3697fdeed5e, type: 3}
       propertyPath: m_Renderer
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8634317094661461186, guid: eb9104ef66b7305468adb3697fdeed5e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8634317094661461186, guid: eb9104ef66b7305468adb3697fdeed5e, type: 3}
       propertyPath: m_InteractableSource

@@ -8,6 +8,7 @@ TagManager:
   - lake
   - forest
   - farm
+  - invasive
   layers:
   - Default
   - TransparentFX

@@ -44,6 +44,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Yard
       objectReference: {fileID: 0}
+    - target: {fileID: 4462458727390830, guid: 93a098cd0b1bf9f4d9fdd0930309dd68, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.43
+      objectReference: {fileID: 0}
     - target: {fileID: 4863249073784554, guid: 93a098cd0b1bf9f4d9fdd0930309dd68, type: 3}
       propertyPath: m_RootOrder
       value: 1

@@ -23,25 +23,16 @@ public class AnimationOnGrab : MonoBehaviour
     {
         if (animatorObject.GetComponent<Animator>() != null)
         {
-            Debug.Log("animator not null, stop anim");
             animatorObject.GetComponent<Animator>().enabled = false;
         }
-        else
-        {
-            Debug.Log("animator null");
-        }
+
     }
 
     private void StartAnimation(SelectExitEventArgs args)
     {
         if (animatorObject.GetComponent<Animator>() != null)
         {
-            Debug.Log("animator not null, start anim");
             animatorObject.GetComponent<Animator>().enabled = true;
-        }
-        else
-        {
-            Debug.Log("animator null");
         }
     }
 }

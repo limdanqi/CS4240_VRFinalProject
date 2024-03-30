@@ -32,9 +32,8 @@ public class WristTimerDisplay : MonoBehaviour
 
         if (currentTime <= 0f)
         {
-            GameObject player = GameObject.FindWithTag("Player");
-            Destroy(player);
-            SceneManager.LoadScene("GameOver");
+            // To add once Scene is complete
+            // SceneManager.LoadScene("GameOver");
             enabled = false;
         }
     }

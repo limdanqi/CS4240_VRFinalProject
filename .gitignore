@@ -72,4 +72,15 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 # Oculus integration assets
-Assets/Oculus/
+# Include CustomHands folder only
+!Assets/Oculus/
+
+Assets/Oculus/*
+!Assets/Oculus/SampleFramework/
+
+Assets/Oculus/SampleFramework/*
+!Assets/Oculus/SampleFramework/Core/
+
+Assets/Oculus/SampleFramework/Core/*
+!Assets/Oculus/SampleFramework/Core/CustomHands/
+!Assets/Oculus/SampleFramework/Core/CustomHands.meta

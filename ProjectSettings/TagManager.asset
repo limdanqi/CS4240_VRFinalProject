@@ -9,6 +9,9 @@ TagManager:
   - forest
   - farm
   - invasive
+  - Left Hand
+  - Right Hand
+  - Invasive
   layers:
   - Default
   - TransparentFX
@@ -16,7 +19,7 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
+  - Animal
   - 
   - 
   - 

@@ -1516,6 +1516,15 @@
                     "initialStateCheck": true
                 },
                 {
+                    "name": "A Button",
+                    "type": "Button",
+                    "id": "6c97f8fb-b4f3-44c7-bb3a-b5725508a9e1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "UI Press",
                     "type": "Button",
                     "id": "65174b45-c2ee-4f90-93bb-fb4084eaaab3",
@@ -1742,6 +1751,17 @@
                     "processors": "ScaleVector2(x=0),StickDeadzone",
                     "groups": "Generic XR Controller",
                     "action": "Scale Delta",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "42e41897-1589-4553-a643-a3b71e3d6b4e",
+                    "path": "<XRController>{RightHand}/{PrimaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Generic XR Controller",
+                    "action": "A Button",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

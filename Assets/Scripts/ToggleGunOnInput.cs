@@ -14,6 +14,11 @@ public class ToggleGunOnInput : MonoBehaviour
     private bool isToggleOn = false;
     private bool isPressing = false;
 
+    private void Start()
+    {
+        gunObject.SetActive(false);
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -23,13 +28,21 @@ public class ToggleGunOnInput : MonoBehaviour
 
             if (isToggleOn)
             {
+                // Hide Gun
                 isToggleOn = false;
                 gunObject.SetActive(false);
+
+                // Revert to original hand pose
+                GetComponent<GrabGunHandPose>().RevertGunPose();
             }
             else
             {
+                // Show Gun
                 isToggleOn = true;
                 gunObject.SetActive(true);
+
+                // Change to gun pose
+                GetComponent<GrabGunHandPose>().SetupGunPose();
             }
 
         }

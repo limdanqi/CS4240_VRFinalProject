@@ -32,8 +32,7 @@ public class WristTimerDisplay : MonoBehaviour
 
         if (currentTime <= 0f)
         {
-            // To add once Scene is complete
-            // SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene("GameOver");
             enabled = false;
         }
     }

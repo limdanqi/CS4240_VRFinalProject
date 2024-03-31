@@ -716,7 +716,7 @@ Transform:
   - {fileID: 1466323951}
   - {fileID: 1713490905}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 24.217, z: 0}
 --- !u!114 &567518035
 MonoBehaviour:
@@ -756,7 +756,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5103856454770255679, guid: 72bbdf0070cf5194e82b56035b0e8e2e, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5103856454770255679, guid: 72bbdf0070cf5194e82b56035b0e8e2e, type: 3}
       propertyPath: m_LocalScale.x
@@ -813,6 +813,10 @@ PrefabInstance:
     - target: {fileID: 6221205096054041517, guid: 72bbdf0070cf5194e82b56035b0e8e2e, type: 3}
       propertyPath: m_Name
       value: Monkey
+      objectReference: {fileID: 0}
+    - target: {fileID: 8138459059600937260, guid: 72bbdf0070cf5194e82b56035b0e8e2e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72bbdf0070cf5194e82b56035b0e8e2e, type: 3}
@@ -1666,6 +1670,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.2779992, y: 5.7785, z: 7.269469}
   m_Center: {x: -0.15925023, y: 2.3892527, z: 0.86121875}
+--- !u!95 &1494191486
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494191484}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 790a59d5c287faa44a67a04ce02dc54c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1571425756
 GameObject:
   m_ObjectHideFlags: 0
@@ -1971,7 +1995,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2305620217130397878, guid: 8f32c0b5d201d9346b1536e224eee4cb, type: 3}
       propertyPath: m_Name
-      value: TutorialSIgn
+      value: TutorialSIgn (Pet)
       objectReference: {fileID: 0}
     - target: {fileID: 7496717391429834741, guid: 8f32c0b5d201d9346b1536e224eee4cb, type: 3}
       propertyPath: m_Pivot.x
@@ -2198,6 +2222,10 @@ PrefabInstance:
     - target: {fileID: 1285408978419354438, guid: 9034e08c0362df1479f902e1b19fb362, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 1693260934204034952, guid: 9034e08c0362df1479f902e1b19fb362, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7658797531979841601, guid: 9034e08c0362df1479f902e1b19fb362, type: 3}
       propertyPath: m_RootOrder

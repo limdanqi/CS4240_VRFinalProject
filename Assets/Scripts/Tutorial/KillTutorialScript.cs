@@ -13,6 +13,7 @@ public class KillTutorialScript : MonoBehaviour
 
     private Vector3 deerPos;
     private Quaternion deerRot;
+    private Animator deerAnimator;
 
     private bool isSuccess = false;
     private bool isFailure = false;
@@ -26,6 +27,9 @@ public class KillTutorialScript : MonoBehaviour
         againText.SetActive(false);
         deerPos = deer.transform.position;
         deerRot = deer.transform.rotation;
+        deerAnimator = deer.GetComponent<Animator>();
+        Debug.Log(deerAnimator.ToString());
+        deerAnimator.SetBool("isChased", true);
 
     }
     void OnTriggerStay(Collider other)
@@ -40,12 +44,15 @@ public class KillTutorialScript : MonoBehaviour
                 successText.SetActive(false);
                 failureText.SetActive(false);
                 againText.SetActive(false);
+                // invasive still inside
+                deerAnimator.SetBool("isChased", true);
             } else if (isSuccess)
             {
                 hintText.SetActive(false);
                 successText.SetActive(true);
                 failureText.SetActive(false);
                 againText.SetActive(false);
+                deerAnimator.SetBool("isChased", false);
             }
             else if (isAgain)
             {
@@ -53,6 +60,7 @@ public class KillTutorialScript : MonoBehaviour
                 successText.SetActive(false);
                 failureText.SetActive(false);
                 againText.SetActive(true);
+                deerAnimator.SetBool("isChased", true);
             }
             else if (isFailure)
             {
@@ -60,6 +68,7 @@ public class KillTutorialScript : MonoBehaviour
                 successText.SetActive(false);
                 failureText.SetActive(true);
                 againText.SetActive(false);
+                deerAnimator.SetBool("isChased", true);
             } 
         }
        
@@ -90,7 +99,7 @@ public class KillTutorialScript : MonoBehaviour
     IEnumerator RespawnAnimal()
     {
         yield return new WaitForSeconds(10); // Wait for 10 seconds
-        Instantiate(deer, deerPos, deerRot); // Respawn the animal
+        deer = Instantiate(deer, deerPos, deerRot); // Respawn the animal
         isAgain = true;
         isFailure = false;
     }

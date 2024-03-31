@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PickTutWater : MonoBehaviour
 {
+    public bool isGoodWater;
     PickTutorialScript parentScript;
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,7 @@ public class PickTutWater : MonoBehaviour
             if (other.CompareTag("lake"))
             {
                 parentScript.isSuccess = true;
+                parentScript.isGoodWater = isGoodWater;
             }
         }
     }

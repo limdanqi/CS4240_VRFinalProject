@@ -84,3 +84,7 @@ Assets/Oculus/SampleFramework/*
 Assets/Oculus/SampleFramework/Core/*
 !Assets/Oculus/SampleFramework/Core/CustomHands/
 !Assets/Oculus/SampleFramework/Core/CustomHands.meta
+
+# Ignore all TextMeshPro files
+**/TextMesh*.*
+**/TMP_*

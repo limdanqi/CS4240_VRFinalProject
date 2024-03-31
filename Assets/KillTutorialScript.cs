@@ -9,10 +9,10 @@ public class KillTutorialScript : MonoBehaviour
     public GameObject successText;
     public GameObject failureText;
     public GameObject againText;
-    public GameObject sparrow;
+    public GameObject deer;
 
-    private Vector3 sparrowPos;
-    private Quaternion sparrowRot;
+    private Vector3 deerPos;
+    private Quaternion deerRot;
 
     private bool isSuccess = false;
     private bool isFailure = false;
@@ -24,8 +24,8 @@ public class KillTutorialScript : MonoBehaviour
         successText.SetActive(false);
         failureText.SetActive(false);
         againText.SetActive(false);
-        sparrowPos = sparrow.transform.position;
-        sparrowRot = sparrow.transform.rotation;
+        deerPos = deer.transform.position;
+        deerRot = deer.transform.rotation;
 
     }
     void OnTriggerStay(Collider other)
@@ -90,7 +90,7 @@ public class KillTutorialScript : MonoBehaviour
     IEnumerator RespawnAnimal()
     {
         yield return new WaitForSeconds(10); // Wait for 10 seconds
-        Instantiate(sparrow, sparrowPos, sparrowRot); // Respawn the animal
+        Instantiate(deer, deerPos, deerRot); // Respawn the animal
         isAgain = true;
         isFailure = false;
     }

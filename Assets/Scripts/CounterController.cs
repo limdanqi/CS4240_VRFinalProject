@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CounterController : MonoBehaviour
 {
     public static int totalRelocateAnimals;
     public static int rightHabitat;
     public static int invasiveRemaining;
+    private TextMeshProUGUI counterText;
 
     void Start()
     {
+        counterText = GetComponent<TextMeshProUGUI>();
         CountRelocateAnimals();
         CountRightHabitatAnimals();
         CountInvasiveAnimals();
@@ -18,7 +21,7 @@ public class CounterController : MonoBehaviour
 
     void Update()
     {
-        
+        DisplayCounts();
     }
 
     void CountRelocateAnimals()
@@ -96,5 +99,8 @@ public class CounterController : MonoBehaviour
     {
         Debug.Log("Relocate: " + rightHabitat + " / " + totalRelocateAnimals);
         Debug.Log("Invasive: " + invasiveRemaining);
+        string relocateText = rightHabitat + "/" + totalRelocateAnimals;
+        string invasiveText = invasiveRemaining.ToString();
+        counterText.text = relocateText + " " + invasiveRemaining; 
     }
 }

@@ -12,6 +12,7 @@ TagManager:
   - Left Hand
   - Right Hand
   - Invasive
+  - Animal
   layers:
   - Default
   - TransparentFX

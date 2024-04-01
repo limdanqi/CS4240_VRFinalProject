@@ -13,6 +13,11 @@ TagManager:
   - Right Hand
   - Invasive
   - Animal
+  - barnArea
+  - lakeArea
+  - farmArea
+  - forestArea
+  - Bullet
   layers:
   - Default
   - TransparentFX

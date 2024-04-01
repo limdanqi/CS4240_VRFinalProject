@@ -4,23 +4,22 @@ using UnityEngine;
 
 public class InvasiveController : MonoBehaviour
 {   
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        if(collision.gameObject.CompareTag("Bullet"))
+        if (other.gameObject.CompareTag("Bullet"))
         {
             kill();
+            Destroy(other.gameObject);
         }
     }
 

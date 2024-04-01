@@ -35,16 +35,7 @@ public class CounterController : MonoBehaviour
         relocateAnimalsList.AddRange(barnAnimals);
         relocateAnimalsList.AddRange(forestAnimals);
 
-        List<GameObject> filteredRelocateAnimals = new List<GameObject>();
-        foreach (GameObject animal in relocateAnimalsList)
-        {
-            if (!animal.GetComponent<Collider>())
-            {
-                filteredRelocateAnimals.Add(animal);
-            }
-        }
-
-        totalRelocateAnimals = filteredRelocateAnimals.Count;
+        totalRelocateAnimals = relocateAnimalsList.Count;
     }
 
     void CountRightHabitatAnimals()
@@ -55,9 +46,9 @@ public class CounterController : MonoBehaviour
         GameObject[] barnAnimals = GameObject.FindGameObjectsWithTag("barn");
         GameObject[] forestAnimals = GameObject.FindGameObjectsWithTag("forest");
 
-        rightHabitat += CountAnimalsInCorrectHabitat(lakeAnimals, "lake");
-        rightHabitat += CountAnimalsInCorrectHabitat(barnAnimals, "barn");
-        rightHabitat += CountAnimalsInCorrectHabitat(forestAnimals, "forest");
+        rightHabitat += CountAnimalsInCorrectHabitat(lakeAnimals, "lakeArea");
+        rightHabitat += CountAnimalsInCorrectHabitat(barnAnimals, "barnArea");
+        rightHabitat += CountAnimalsInCorrectHabitat(forestAnimals, "forestArea");
     }
 
     int CountAnimalsInCorrectHabitat(GameObject[] animals, string habitatTag)

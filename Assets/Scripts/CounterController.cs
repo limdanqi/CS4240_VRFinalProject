@@ -86,6 +86,10 @@ public class CounterController : MonoBehaviour
         invasiveRemaining = invasiveAnimals.Length;
     }
 
+    public static void DecrementInvasive() {
+        invasiveRemaining -= 1;
+    }
+
     void DisplayCounts()
     {
         Debug.Log("Relocate: " + rightHabitat + " / " + totalRelocateAnimals);

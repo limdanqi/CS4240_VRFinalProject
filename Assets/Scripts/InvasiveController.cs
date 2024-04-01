@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class InvasiveController : MonoBehaviour
 {   
+    private Rigidbody rb;
+    
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -24,12 +26,12 @@ public class InvasiveController : MonoBehaviour
     }
 
     public void kill() {
-        DecrementCounter();
+        DecrementInvasive();
         Destroy(gameObject);
     }
 
-    void DecrementCounter()
+    void DecrementInvasive()
     {
-        InvasiveManager.DecrementCounter();
+        CounterController.DecrementInvasive();
     }
 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4938284502189777983}
   - component: {fileID: 4938284502189777982}
   - component: {fileID: 11635652577908585}
+  - component: {fileID: 7396373511451400077}
   m_Layer: 0
   m_Name: Interactable Snake
   m_TagString: Untagged
@@ -218,6 +219,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactableComponent: {fileID: 4938284502189777982}
   animatorObject: {fileID: 5560056028614606880}
+--- !u!65 &7396373511451400077
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4938284502189777971}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.9436247, z: 1.1254939}
+  m_Center: {x: 0, y: 0.44526455, z: 0.06274696}
 --- !u!1001 &1121531592324476051
 PrefabInstance:
   m_ObjectHideFlags: 0

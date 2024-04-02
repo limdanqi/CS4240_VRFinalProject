@@ -27,7 +27,7 @@ public class KillTutorialScript : MonoBehaviour
         againText.SetActive(false);
         deerPos = deer.transform.position;
         deerRot = deer.transform.rotation;
-        deerAnimator = deer.GetComponent<Animator>();
+        deerAnimator = deer.GetComponentInChildren<Animator>();
         Debug.Log(deerAnimator.ToString());
         deerAnimator.SetBool("isChased", true);
 

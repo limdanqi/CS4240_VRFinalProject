@@ -48,4 +48,14 @@ public class PickTutorialScript : MonoBehaviour
        
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            hintText.SetActive(false);
+            successText.SetActive(false);
+            wrongText.SetActive(false);
+        }
+    }
+
 }

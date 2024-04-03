@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4938284502189777982}
   - component: {fileID: 8140186151218822236}
   - component: {fileID: 1526502185911467794}
+  - component: {fileID: 832032242372744943}
   m_Layer: 0
   m_Name: Interactable Deer
   m_TagString: barn
@@ -232,6 +233,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.2779992, y: 5.7785, z: 7.269469}
   m_Center: {x: -0.15925023, y: 2.3892527, z: 0.86121875}
+--- !u!114 &832032242372744943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4938284502189777971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 141c4134eb86f0f4e8a4b1e82794d1e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &554768246721995848
 PrefabInstance:
   m_ObjectHideFlags: 0

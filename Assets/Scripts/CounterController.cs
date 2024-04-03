@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CounterController : MonoBehaviour
 {
     public static int totalRelocateAnimals;
     public static int rightHabitat;
     public static int invasiveRemaining;
+    private TextMeshProUGUI counterText;
 
     void Start()
     {
+        counterText = GetComponent<TextMeshProUGUI>();
         CountRelocateAnimals();
         CountRightHabitatAnimals();
         CountInvasiveAnimals();
@@ -18,7 +21,7 @@ public class CounterController : MonoBehaviour
 
     void Update()
     {
-        
+        DisplayCounts();
     }
 
     void CountRelocateAnimals()
@@ -32,16 +35,7 @@ public class CounterController : MonoBehaviour
         relocateAnimalsList.AddRange(barnAnimals);
         relocateAnimalsList.AddRange(forestAnimals);
 
-        List<GameObject> filteredRelocateAnimals = new List<GameObject>();
-        foreach (GameObject animal in relocateAnimalsList)
-        {
-            if (!animal.GetComponent<Collider>())
-            {
-                filteredRelocateAnimals.Add(animal);
-            }
-        }
-
-        totalRelocateAnimals = filteredRelocateAnimals.Count;
+        totalRelocateAnimals = relocateAnimalsList.Count;
     }
 
     void CountRightHabitatAnimals()
@@ -52,9 +46,9 @@ public class CounterController : MonoBehaviour
         GameObject[] barnAnimals = GameObject.FindGameObjectsWithTag("barn");
         GameObject[] forestAnimals = GameObject.FindGameObjectsWithTag("forest");
 
-        rightHabitat += CountAnimalsInCorrectHabitat(lakeAnimals, "lake");
-        rightHabitat += CountAnimalsInCorrectHabitat(barnAnimals, "barn");
-        rightHabitat += CountAnimalsInCorrectHabitat(forestAnimals, "forest");
+        rightHabitat += CountAnimalsInCorrectHabitat(lakeAnimals, "lakearea");
+        rightHabitat += CountAnimalsInCorrectHabitat(barnAnimals, "barnarea");
+        rightHabitat += CountAnimalsInCorrectHabitat(forestAnimals, "forestarea");
     }
 
     int CountAnimalsInCorrectHabitat(GameObject[] animals, string habitatTag)
@@ -96,5 +90,8 @@ public class CounterController : MonoBehaviour
     {
         Debug.Log("Relocate: " + rightHabitat + " / " + totalRelocateAnimals);
         Debug.Log("Invasive: " + invasiveRemaining);
+        string relocateText = rightHabitat + "/" + totalRelocateAnimals;
+        string invasiveText = invasiveRemaining.ToString();
+        counterText.text = relocateText + " " + invasiveRemaining; 
     }
 }

@@ -13,6 +13,7 @@ TagManager:
   - Right Hand
   - Invasive
   - Animal
+  - barnarea
   layers:
   - Default
   - TransparentFX

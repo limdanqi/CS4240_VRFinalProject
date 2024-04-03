@@ -487,6 +487,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8209775890510335994, guid: c4fa87cd4eff4ae4ba4c8d1ad48df5f7, type: 3}
   m_PrefabInstance: {fileID: 146737524}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &171488230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 171488231}
+  - component: {fileID: 171488232}
+  m_Layer: 0
+  m_Name: BarnArea (11)
+  m_TagString: barn
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &171488231
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171488230}
+  m_LocalRotation: {x: -0, y: -0.75602424, z: -0, w: 0.6545436}
+  m_LocalPosition: {x: -6.0002027, y: -3, z: 10.422073}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1221164934}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: -98.23, z: 0}
+--- !u!65 &171488232
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171488230}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.6533375, y: 1, z: 3.7459936}
+  m_Center: {x: -10.3972645, y: 0, z: -7.4581366}
 --- !u!1 &202707638
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,7 +566,7 @@ Transform:
   - {fileID: 666825900}
   - {fileID: 527110082}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &228736990
 PrefabInstance:
@@ -843,6 +888,51 @@ Transform:
   m_Father: {fileID: 913947034}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &323721132
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 323721133}
+  - component: {fileID: 323721134}
+  m_Layer: 0
+  m_Name: BarnArea (12)
+  m_TagString: barn
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &323721133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323721132}
+  m_LocalRotation: {x: -0, y: -0.27099535, z: -0, w: 0.9625807}
+  m_LocalPosition: {x: 1.13, y: -3, z: 6.21}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1221164934}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: -31.447, z: 0}
+--- !u!65 &323721134
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323721132}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.821939, y: 1, z: 6.737086}
+  m_Center: {x: -6.9814954, y: 0, z: -8.95368}
 --- !u!1001 &335369170
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -961,7 +1051,7 @@ GameObject:
   - component: {fileID: 359084315}
   - component: {fileID: 359084316}
   m_Layer: 0
-  m_Name: Forest1 (1)
+  m_Name: ForestArea (1)
   m_TagString: forest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -974,14 +1064,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 359084314}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.3, y: 0, z: 61}
+  m_LocalRotation: {x: -0, y: -0.23710068, z: -0, w: 0.9714851}
+  m_LocalPosition: {x: 31.1, y: -2.9, z: 68.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1898473827}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.431, z: 0}
 --- !u!65 &359084316
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -993,8 +1083,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 37.370285, y: 1, z: 17.37796}
-  m_Center: {x: -1.1172867, y: 0, z: 12.734436}
+  m_Size: {x: 31.7361, y: 1, z: 45.73535}
+  m_Center: {x: -3.9343855, y: 0, z: -1.4442741}
 --- !u!1 &381902752
 GameObject:
   m_ObjectHideFlags: 0
@@ -1006,7 +1096,7 @@ GameObject:
   - component: {fileID: 381902753}
   - component: {fileID: 381902754}
   m_Layer: 0
-  m_Name: Forest1
+  m_Name: ForestArea
   m_TagString: forest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1020,7 +1110,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 381902752}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.3, y: 0, z: 61}
+  m_LocalPosition: {x: 28.3, y: -2.9, z: 61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1322,6 +1412,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5473569773201559785, guid: fd8e0760db14a534a89257f68a4f2a8c, type: 3}
   m_PrefabInstance: {fileID: 486074979}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &523134309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 523134310}
+  - component: {fileID: 523134311}
+  m_Layer: 0
+  m_Name: BarnArea (8)
+  m_TagString: barn
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &523134310
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523134309}
+  m_LocalRotation: {x: -0, y: 0.28996137, z: -0, w: 0.9570384}
+  m_LocalPosition: {x: -8.05, y: -3, z: -10.92}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1221164934}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 33.711, z: 0}
+--- !u!65 &523134311
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523134309}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 21.23285, y: 1, z: 5.764844}
+  m_Center: {x: -9.989193, y: 0, z: -4.76766}
 --- !u!1 &527110081
 GameObject:
   m_ObjectHideFlags: 0
@@ -1512,6 +1647,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2906742830765571359, guid: 78da2ace1ab76ce478600ebe37fa10fe, type: 3}
   m_PrefabInstance: {fileID: 590050457}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &593332716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 593332717}
+  - component: {fileID: 593332718}
+  m_Layer: 0
+  m_Name: BarnArea (5)
+  m_TagString: barn
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &593332717
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593332716}
+  m_LocalRotation: {x: -0, y: 0.5280056, z: -0, w: 0.84924096}
+  m_LocalPosition: {x: -14.512531, y: -3, z: -1.3362339}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1221164934}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 63.742, z: 0}
+--- !u!65 &593332718
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593332716}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.899999, y: 1, z: 4.6745253}
+  m_Center: {x: -14.300789, y: 0, z: 0.086726524}
 --- !u!1 &609367795
 GameObject:
   m_ObjectHideFlags: 0
@@ -1767,6 +1947,51 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &672535672
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 672535673}
+  - component: {fileID: 672535674}
+  m_Layer: 0
+  m_Name: BarnArea (13)
+  m_TagString: barn
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &672535673
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672535672}
+  m_LocalRotation: {x: -0, y: -0.5214, z: -0, w: 0.85331243}
+  m_LocalPosition: {x: -2.44, y: -3, z: 6.71}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1221164934}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: -62.852, z: 0}
+--- !u!65 &672535674
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672535672}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.4018226, y: 1, z: 6.274399}
+  m_Center: {x: -7.6088123, y: 0, z: -8.722378}
 --- !u!1001 &673988773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2134,6 +2359,51 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &755490596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 755490597}
+  - component: {fileID: 755490598}
+  m_Layer: 0
+  m_Name: BarnArea (1)
+  m_TagString: barn
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &755490597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755490596}
+  m_LocalRotation: {x: -0, y: 0.09296158, z: -0, w: 0.9956697}
+  m_LocalPosition: {x: -12.3, y: -3, z: -0.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1221164934}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 10.668, z: 0}
+--- !u!65 &755490598
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755490596}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.3599262, y: 1, z: 15.3}
+  m_Center: {x: -14.300988, y: 0, z: -0.00002241805}
 --- !u!1001 &759015701
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2243,6 +2513,51 @@ Transform:
   m_Father: {fileID: 1340470944}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &763885510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 763885511}
+  - component: {fileID: 763885512}
+  m_Layer: 0
+  m_Name: BarnArea (3)
+  m_TagString: barn
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &763885511
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763885510}
+  m_LocalRotation: {x: -0, y: 0.40360057, z: -0, w: 0.9149353}
+  m_LocalPosition: {x: -15.07, y: -3, z: -0.41}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1221164934}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 47.607, z: 0}
+--- !u!65 &763885512
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763885510}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.8999994, y: 1, z: 5.7648435}
+  m_Center: {x: -14.300878, y: 0, z: -4.767621}
 --- !u!1 &772545136
 GameObject:
   m_ObjectHideFlags: 0
@@ -2812,8 +3127,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1099075221}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 46.7, y: 0, z: 98.1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -73.70148, y: -4.924224, z: -12.376717}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2825,8 +3140,8 @@ Transform:
   - {fileID: 1956555336}
   - {fileID: 358930560}
   - {fileID: 1760800137}
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 1888988403}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1112947700
 PrefabInstance:
@@ -2893,6 +3208,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b29c0b295fc50b1499a7415960773abd, type: 3}
+--- !u!1 &1157099142
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1157099143}
+  - component: {fileID: 1157099144}
+  m_Layer: 0
+  m_Name: BarnArea
+  m_TagString: barn
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1157099143
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157099142}
+  m_LocalRotation: {x: -0, y: 0.09296158, z: -0, w: 0.9956697}
+  m_LocalPosition: {x: -12.2, y: -3, z: 0.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1221164934}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 10.668, z: 0}
+--- !u!65 &1157099144
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157099142}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 26, y: 1, z: 19}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1191865147
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2955,6 +3315,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2906742830765571359, guid: 78da2ace1ab76ce478600ebe37fa10fe, type: 3}
   m_PrefabInstance: {fileID: 1191865147}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1220150919
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1220150920}
+  - component: {fileID: 1220150921}
+  m_Layer: 0
+  m_Name: BarnArea (10)
+  m_TagString: barn
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1220150920
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220150919}
+  m_LocalRotation: {x: -0, y: -0.5055743, z: -0, w: 0.86278313}
+  m_LocalPosition: {x: -1.0485663, y: -3, z: 7.373041}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1221164934}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: -60.739, z: 0}
+--- !u!65 &1220150921
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220150919}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.653339, y: 1, z: 3.9003072}
+  m_Center: {x: -10.397256, y: 0, z: -7.53529}
 --- !u!1 &1221164933
 GameObject:
   m_ObjectHideFlags: 0
@@ -2984,9 +3389,69 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2099016688}
+  - {fileID: 1157099143}
+  - {fileID: 755490597}
+  - {fileID: 1650075755}
+  - {fileID: 763885511}
+  - {fileID: 1328862640}
+  - {fileID: 593332717}
+  - {fileID: 1221650517}
+  - {fileID: 1346781926}
+  - {fileID: 523134310}
+  - {fileID: 1343716925}
+  - {fileID: 1220150920}
+  - {fileID: 171488231}
+  - {fileID: 323721133}
+  - {fileID: 672535673}
+  - {fileID: 1902535891}
   m_Father: {fileID: 1227818079}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1221650516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1221650517}
+  - component: {fileID: 1221650518}
+  m_Layer: 0
+  m_Name: BarnArea (6)
+  m_TagString: barn
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1221650517
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221650516}
+  m_LocalRotation: {x: -0, y: 0.68579584, z: -0, w: 0.727794}
+  m_LocalPosition: {x: -16.12, y: -3, z: -1.65}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1221164934}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 86.596, z: 0}
+--- !u!65 &1221650518
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221650516}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 7.181176, y: 1, z: 5.456174}
+  m_Center: {x: -12.160197, y: 0, z: 0.47753552}
 --- !u!1 &1221978022
 GameObject:
   m_ObjectHideFlags: 0
@@ -2998,7 +3463,7 @@ GameObject:
   - component: {fileID: 1221978023}
   - component: {fileID: 1221978024}
   m_Layer: 0
-  m_Name: Farm1
+  m_Name: FarmArea
   m_TagString: farm
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3011,14 +3476,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1221978022}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -43.33, y: 0, z: 20.23}
+  m_LocalRotation: {x: -0, y: 0.02611439, z: -0, w: 0.99965894}
+  m_LocalPosition: {x: -43.58287, y: -3, z: 20.201218}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1235230459}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 2.993, z: 0}
 --- !u!65 &1221978024
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3030,8 +3495,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.0566025, y: 8.343267, z: 11.950607}
-  m_Center: {x: -0.5938759, y: 0.1910572, z: 4.6587296}
+  m_Size: {x: 6.7729034, y: 1, z: 11.039825}
+  m_Center: {x: -0.677536, y: 0.1910572, z: 4.826065}
 --- !u!1001 &1222629136
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3326,6 +3791,51 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1328862639
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1328862640}
+  - component: {fileID: 1328862641}
+  m_Layer: 0
+  m_Name: BarnArea (4)
+  m_TagString: barn
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1328862640
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328862639}
+  m_LocalRotation: {x: -0, y: 0.48429775, z: -0, w: 0.87490326}
+  m_LocalPosition: {x: -12.66, y: -3, z: 0.29}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1221164934}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 57.933, z: 0}
+--- !u!65 &1328862641
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328862639}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.8999994, y: 1, z: 5.7648435}
+  m_Center: {x: -14.300878, y: 0, z: -4.767621}
 --- !u!1 &1340470943
 GameObject:
   m_ObjectHideFlags: 0
@@ -3362,6 +3872,96 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1343716924
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1343716925}
+  - component: {fileID: 1343716926}
+  m_Layer: 0
+  m_Name: BarnArea (9)
+  m_TagString: barn
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1343716925
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343716924}
+  m_LocalRotation: {x: -0, y: -0.24440846, z: -0, w: 0.96967244}
+  m_LocalPosition: {x: 2.89, y: -3, z: -0.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1221164934}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: -28.294, z: 0}
+--- !u!65 &1343716926
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343716924}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.96822, y: 1, z: 11.301641}
+  m_Center: {x: -14.121709, y: 0, z: -1.9993037}
+--- !u!1 &1346781925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1346781926}
+  - component: {fileID: 1346781927}
+  m_Layer: 0
+  m_Name: BarnArea (7)
+  m_TagString: barn
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1346781926
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346781925}
+  m_LocalRotation: {x: -0, y: 0.79891825, z: -0, w: 0.60143965}
+  m_LocalPosition: {x: -15.55, y: -3, z: -0.64}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1221164934}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 106.054, z: 0}
+--- !u!65 &1346781927
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346781925}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.932662, y: 1, z: 16.468386}
+  m_Center: {x: -11.244693, y: 0, z: 5.9836955}
 --- !u!1 &1353405802
 GameObject:
   m_ObjectHideFlags: 0
@@ -4251,6 +4851,51 @@ Transform:
   m_Father: {fileID: 913947034}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1650075754
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1650075755}
+  - component: {fileID: 1650075756}
+  m_Layer: 0
+  m_Name: BarnArea (2)
+  m_TagString: barn
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1650075755
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650075754}
+  m_LocalRotation: {x: -0, y: -0.08100692, z: -0, w: 0.9967136}
+  m_LocalPosition: {x: -15.240517, y: -3, z: 5.1167154}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1221164934}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -9.293, z: 0}
+--- !u!65 &1650075756
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650075754}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.1282253, y: 1, z: 10.975058}
+  m_Center: {x: -12.686735, y: 0, z: -2.1624918}
 --- !u!1 &1662533740 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6994032860273046492, guid: b29c0b295fc50b1499a7415960773abd, type: 3}
@@ -4732,7 +5377,7 @@ GameObject:
   - component: {fileID: 1741322724}
   - component: {fileID: 1741322725}
   m_Layer: 0
-  m_Name: Water1
+  m_Name: WaterArea
   m_TagString: lake
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4746,7 +5391,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1741322723}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -4.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4764,8 +5409,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 65.30359, y: 50.924767, z: 158.73842}
-  m_Center: {x: -8.855576, y: -30.951702, z: 39.435997}
+  m_Size: {x: 68.435135, y: 1, z: 158.73842}
+  m_Center: {x: -10.421349, y: 0, z: 39.435997}
 --- !u!1 &1760800136
 GameObject:
   m_ObjectHideFlags: 0
@@ -5321,6 +5966,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1227818079}
+  - {fileID: 1099075222}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5427,6 +6073,51 @@ Transform:
   m_Father: {fileID: 1227818079}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1902535890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1902535891}
+  - component: {fileID: 1902535892}
+  m_Layer: 0
+  m_Name: BarnArea (14)
+  m_TagString: barn
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1902535891
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902535890}
+  m_LocalRotation: {x: -0, y: -0.38174173, z: -0, w: 0.924269}
+  m_LocalPosition: {x: 1.39, y: -3, z: 18.82}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1221164934}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: -44.883, z: 0}
+--- !u!65 &1902535892
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902535890}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.4018223, y: 1, z: 3.436181}
+  m_Center: {x: -7.6087904, y: 0, z: -8.027838}
 --- !u!1001 &1949051732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5960,7 +6651,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2099016688
 Transform:
   m_ObjectHideFlags: 0

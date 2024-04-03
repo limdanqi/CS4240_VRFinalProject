@@ -82,16 +82,15 @@ public class CounterController : MonoBehaviour
 
     void CountInvasiveAnimals()
     {
+        invasiveRemaining = 0;
         GameObject[] invasiveAnimals = GameObject.FindGameObjectsWithTag("Invasive");
-        invasiveRemaining = invasiveAnimals.Length;
+        invasiveRemaining += invasiveAnimals.Length;
     }
 
     void DisplayCounts()
     {
-        Debug.Log("Relocate: " + rightHabitat + " / " + totalRelocateAnimals);
-        Debug.Log("Invasive: " + invasiveRemaining);
         string relocateText = rightHabitat + "/" + totalRelocateAnimals;
         string invasiveText = invasiveRemaining.ToString();
-        counterText.text = relocateText + " " + invasiveRemaining; 
+        counterText.text = relocateText + "\n" + invasiveRemaining; 
     }
 }

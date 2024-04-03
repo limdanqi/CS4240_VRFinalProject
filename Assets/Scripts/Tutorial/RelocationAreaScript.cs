@@ -21,7 +21,7 @@ public class RelocationAreaScript : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == TAG_ANIMAL)
+        if (other.gameObject.CompareTag(TAG_ANIMAL))
         {
             isAnimalPresent = true;
             if (other.gameObject == correctAnimal)

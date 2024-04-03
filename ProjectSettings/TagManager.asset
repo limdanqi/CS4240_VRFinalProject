@@ -17,6 +17,7 @@ TagManager:
   - lakearea
   - forestarea
   - farmarea
+  - Bullet
   layers:
   - Default
   - TransparentFX

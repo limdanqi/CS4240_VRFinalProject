@@ -37,6 +37,14 @@ public class PetAnimalOnInput : MonoBehaviour
         {
             Animator animator = animalsHovered[i].transform.gameObject.GetComponentInChildren<Animator>();
             animator.SetBool(ANIM_PARAM_IS_PETTING, isPetting);
+            ParticleSystem particle = animalsHovered[i].transform.gameObject.GetComponentInChildren<ParticleSystem>();
+            if (isPetting)
+            {
+                particle.Play();
+            } else
+            {
+                particle.Stop();
+            }
         }
     }
 }

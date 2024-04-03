@@ -14,8 +14,8 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
-  m_FogColor: {r: 0.72337216, g: 0.59261894, b: 0.8301887, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: 0.74205947, g: 0.7058824, b: 1, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.004
   m_LinearFogStart: 0
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3693806, g: 0.62423, b: 1.7779956, a: 1}
+  m_IndirectSpecularColor: {r: 0.41923413, g: 0.71516955, b: 3.243724, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1533,8 +1533,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.8742138, b: 0.88427, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 0.9622642, g: 0.8288818, b: 0.7595229, a: 1}
+  m_Intensity: 0.52
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1591,14 +1591,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 727886342}
-  m_LocalRotation: {x: 0.268021, y: 0.6894324, z: 0.080881834, w: 0.66806126}
-  m_LocalPosition: {x: -48, y: 80, z: 83}
+  m_LocalRotation: {x: -0.18108033, y: 0.23933679, z: -0.272521, w: 0.9141445}
+  m_LocalPosition: {x: 51.85, y: 77.03, z: 32.68}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 14.275, y: 95.584, z: 29.528}
+  m_LocalEulerAnglesHint: {x: -11.573, y: 33.189, z: -36.66}
 --- !u!114 &727886345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5105,8 +5105,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 8.726374, y: 6.928444, z: 15.760336}
-  m_Center: {x: -0.10805273, y: 2.9642239, z: 0.44594303}
+  m_Size: {x: 7.812087, y: 6.928444, z: 13.417869}
+  m_Center: {x: 0.34909207, y: 2.9642239, z: -0.7252906}
 --- !u!1 &2099016687
 GameObject:
   m_ObjectHideFlags: 0

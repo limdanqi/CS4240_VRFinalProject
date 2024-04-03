@@ -12,7 +12,7 @@ public class PetAnimalOnInput : MonoBehaviour
     [SerializeField]
     private XRDirectInteractor interactor;
 
-    private const string ANIM_PARAM_IS_PETTING = "IsPetting";
+    private const string ANIM_PARAM_IS_PETTING = "isPetting";
 
     // Update is called once per frame
     void Update()

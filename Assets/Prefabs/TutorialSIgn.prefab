@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5005505649047671610}
   - component: {fileID: 2997687139850886907}
   m_Layer: 0
-  m_Name: TutorialSIgn
+  m_Name: TutorialSign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

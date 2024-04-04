@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class RelocationController : MonoBehaviour
 {
-    private bool isCorrectHabitat;
     private GameObject animal;
+    private bool isCorrectHabitat;
     public string habitatTag;
     
     // Start is called before the first frame update
@@ -18,34 +18,35 @@ public class RelocationController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        UpdateRelocation();
+
+    }
+    
+    void OnTriggerEnter(Collider other)
+    {
+        if (habitatTag.EndsWith("area")) {
+            if (!isCorrectHabitat) {
+                if (other.gameObject.CompareTag(habitatTag))
+                {
+                    CounterController.IncrementRelocate();
+                    isCorrectHabitat = !isCorrectHabitat;
+                }
+            } else {
+                if (!other.gameObject.CompareTag(habitatTag))
+                {
+                    CounterController.DecrementRelocate();
+                    isCorrectHabitat = !isCorrectHabitat;
+                }
+            }
+        }
     }
 
     bool IsInCorrectHabitat(GameObject animal, string habitatTag)
     {
-        GameObject[] habitatObjects = GameObject.FindGameObjectsWithTag(habitatTag);
-        
-        foreach (GameObject habitatObject in habitatObjects)
+        Collider collider = animal.GetComponent<Collider>();
+        if (collider != null && collider.bounds.Contains(animal.transform.position))
         {
-            Collider collider = habitatObject.GetComponent<Collider>();
-            if (collider != null && collider.bounds.Contains(animal.transform.position))
-            {
-                return true;
-            }
+            return true;
         }
         return false;
-    }
-
-    public void UpdateRelocation() {
-        bool updatedHabitat = IsInCorrectHabitat(animal, habitatTag);
-        
-        // initially correct, now incorrect
-        if (isCorrectHabitat && !updatedHabitat) {
-            CounterController.DecrementRelocate();
-        }
-        // initially incorrect, now correct
-        else if (!isCorrectHabitat && updatedHabitat) {
-            CounterController.IncrementRelocate();
-        }
     }
 }

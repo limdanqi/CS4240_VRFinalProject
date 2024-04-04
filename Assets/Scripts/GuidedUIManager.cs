@@ -33,7 +33,7 @@ public class GuidedUIManager : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision other)
     {
         if (isGuidedMode && other.gameObject.CompareTag("Bullet") && gameObject.tag != "Invasive")
         {

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2056,13 +2056,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 924516527}
     m_Modifications:
+    - target: {fileID: 3279965369576663551, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4938284502189777971, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
       propertyPath: m_Name
       value: Interactable Fish
       objectReference: {fileID: 0}
     - target: {fileID: 4938284502189777971, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
       propertyPath: m_TagString
-      value: Animal
+      value: lake
       objectReference: {fileID: 0}
     - target: {fileID: 4938284502189777980, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
       propertyPath: m_RootOrder
@@ -2108,8 +2112,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3279965369576663551, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
 --- !u!4 &833233329 stripped
 Transform:
@@ -2259,7 +2262,7 @@ GameObject:
   - component: {fileID: 1015209483}
   m_Layer: 0
   m_Name: Correct Area
-  m_TagString: Untagged
+  m_TagString: lakearea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2387,7 +2390,7 @@ GameObject:
   - component: {fileID: 1064284062}
   m_Layer: 0
   m_Name: Wrong Area
-  m_TagString: Untagged
+  m_TagString: forestarea
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3353,6 +3356,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5025473235295092833, guid: 4af16a612d64a844999ca7b86a6a4042, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: UpdatedEnv
+      objectReference: {fileID: 0}
     - target: {fileID: 5025473235295092834, guid: 4af16a612d64a844999ca7b86a6a4042, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3468,6 +3475,10 @@ PrefabInstance:
     - target: {fileID: 6612108510547571282, guid: 4af16a612d64a844999ca7b86a6a4042, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6712265723093086240, guid: 4af16a612d64a844999ca7b86a6a4042, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: UnguidedTest
       objectReference: {fileID: 0}
     - target: {fileID: 6712265723093086243, guid: 4af16a612d64a844999ca7b86a6a4042, type: 3}
       propertyPath: m_AnchorMax.y

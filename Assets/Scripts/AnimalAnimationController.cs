@@ -13,8 +13,7 @@ public class AnimalAnimationController : MonoBehaviour
     }
 
     private void OnTriggerStay(Collider other)
-    {
-        Debug.Log(other.gameObject.tag);
+    
         if (other.gameObject.CompareTag(tag))
         {
             animator.SetBool("isWrongHabitat", false);

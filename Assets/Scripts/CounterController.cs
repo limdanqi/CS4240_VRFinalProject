@@ -79,6 +79,10 @@ public class CounterController : MonoBehaviour
         return false;
     }
 
+    public static void DecrementCounter()
+    {
+        invasiveRemaining--;
+    }
 
     void CountInvasiveAnimals()
     {

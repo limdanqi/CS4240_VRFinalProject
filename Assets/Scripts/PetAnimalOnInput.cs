@@ -33,6 +33,7 @@ public class PetAnimalOnInput : MonoBehaviour
 
     private void SetAnimalPetAnimation(List<IXRHoverInteractable> animalsHovered, bool isPetting)
     {
+        Debug.Log(isPetting);
         for (int i = 0; i < animalsHovered.Count; i++)
         {
             Animator animator = animalsHovered[i].transform.gameObject.GetComponentInChildren<Animator>();

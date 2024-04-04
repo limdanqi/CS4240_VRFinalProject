@@ -11,10 +11,8 @@ public class AnimalAnimationController : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         tag = gameObject.tag + "area";
     }
-
     private void OnTriggerStay(Collider other)
     {
-
         if (other.gameObject.CompareTag(tag))
         {
             animator.SetBool("isWrongHabitat", false);

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6359445154648184587}
   - component: {fileID: 8788967966033549661}
   - component: {fileID: 3864035418821629736}
+  - component: {fileID: 512350899906710390}
   m_Layer: 0
   m_Name: Interactable Monkey
   m_TagString: forest
@@ -246,6 +247,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 141c4134eb86f0f4e8a4b1e82794d1e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &512350899906710390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4938284502189777971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fcd937d35a734d2b9420a3727ef46b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  habitatTag: forestarea
 --- !u!1001 &470059328333434923
 PrefabInstance:
   m_ObjectHideFlags: 0

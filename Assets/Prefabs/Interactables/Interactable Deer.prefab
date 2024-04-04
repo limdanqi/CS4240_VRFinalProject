@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8140186151218822236}
   - component: {fileID: 1526502185911467794}
   - component: {fileID: 832032242372744943}
+  - component: {fileID: 6420852876254579147}
   m_Layer: 0
   m_Name: Interactable Deer
   m_TagString: barn
@@ -247,6 +248,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 141c4134eb86f0f4e8a4b1e82794d1e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6420852876254579147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4938284502189777971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fcd937d35a734d2b9420a3727ef46b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  habitatTag: barnarea
 --- !u!1001 &554768246721995848
 PrefabInstance:
   m_ObjectHideFlags: 0

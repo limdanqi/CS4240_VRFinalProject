@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 388190863589352084}
   - component: {fileID: 8868139336718566625}
   - component: {fileID: 3279965369576663551}
+  - component: {fileID: 5346902937724605158}
   m_Layer: 0
   m_Name: Interactable Fish
   m_TagString: lake
@@ -247,6 +248,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 141c4134eb86f0f4e8a4b1e82794d1e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5346902937724605158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4938284502189777971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fcd937d35a734d2b9420a3727ef46b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  habitatTag: lakearea
 --- !u!1001 &1998214843877407630
 PrefabInstance:
   m_ObjectHideFlags: 0

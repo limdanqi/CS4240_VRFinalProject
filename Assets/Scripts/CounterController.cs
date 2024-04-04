@@ -84,6 +84,14 @@ public class CounterController : MonoBehaviour
         invasiveRemaining--;
     }
 
+    public static void IncrementRelocate() {
+        rightHabitat++;
+    }
+
+    public static void DecrementRelocate() {
+        rightHabitat--;
+    }
+
     void CountInvasiveAnimals()
     {
         invasiveRemaining = 0;

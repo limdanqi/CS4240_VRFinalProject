@@ -12,7 +12,7 @@ public class AnimalAnimationController : MonoBehaviour
         tag = gameObject.tag + "area";
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerStay(Collider other) {
     
         if (other.gameObject.CompareTag(tag))
         {

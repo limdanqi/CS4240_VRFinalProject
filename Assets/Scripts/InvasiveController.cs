@@ -31,6 +31,6 @@ public class InvasiveController : MonoBehaviour
 
     void DecrementCounter()
     {
-        InvasiveManager.DecrementCounter();
+        CounterController.DecrementCounter();
     }
 }

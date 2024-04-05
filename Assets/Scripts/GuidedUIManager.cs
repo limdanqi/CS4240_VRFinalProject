@@ -12,7 +12,10 @@ public class GuidedUIManager : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        InvasiveUIPopup.enabled = false;
+        if (InvasiveUIPopup != null)
+        {
+            InvasiveUIPopup.enabled = false;
+        }
         HabitatUIPopup.enabled = isGuidedMode;
         isGuidedMode = true; // set as true by default
     }
@@ -29,7 +32,10 @@ public class GuidedUIManager : MonoBehaviour
             Vector3 correctedDirection = Vector3.ProjectOnPlane(directionToCamera, transform.up);
             Quaternion rotation = Quaternion.LookRotation(correctedDirection, transform.up);
             HabitatUIPopup.transform.rotation = rotation * Quaternion.Euler(0, 180f, 0);
-            InvasiveUIPopup.transform.rotation = rotation * Quaternion.Euler(0, 180f, 0);
+            if (InvasiveUIPopup != null)
+            {
+                InvasiveUIPopup.transform.rotation = rotation * Quaternion.Euler(0, 180f, 0);
+            }
         }
     }
 
@@ -46,12 +52,18 @@ public class GuidedUIManager : MonoBehaviour
     void EnableInvasiveCanvas()
     {
         HabitatUIPopup.enabled = false;
-        InvasiveUIPopup.enabled = true;
+        if (InvasiveUIPopup != null)
+        {
+            InvasiveUIPopup.enabled = true;
+        }
     }
 
     void DisableInvasiveCanvas()
     {
-        InvasiveUIPopup.enabled = false;
+        if (InvasiveUIPopup != null)
+        {
+            InvasiveUIPopup.enabled = false;
+        }
         HabitatUIPopup.enabled = true;
     }
 }

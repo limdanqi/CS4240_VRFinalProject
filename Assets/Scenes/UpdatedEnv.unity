@@ -4005,6 +4005,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6259674473614286484, guid: 3e21f9f348251814299e1e61b8896ebc, type: 3}
+      propertyPath: m_text
+      value: 'Barn
+
+        Non-Invasive'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e21f9f348251814299e1e61b8896ebc, type: 3}
 --- !u!114 &1117834688
@@ -5852,6 +5858,11 @@ Canvas:
   m_CorrespondingSourceObject: {fileID: 3440575498319206074, guid: 13c4137d32a50274897a2ecb268026a0, type: 3}
   m_PrefabInstance: {fileID: 171838841}
   m_PrefabAsset: {fileID: 0}
+--- !u!223 &1453181058 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 8794141446602250539, guid: 7a2c09a808dd7f443a3dab518964a050, type: 3}
+  m_PrefabInstance: {fileID: 4813072217415065794}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1458738700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6688,6 +6699,12 @@ PrefabInstance:
     - target: {fileID: 3279965369576663551, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3748249431119552001, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
+      propertyPath: m_text
+      value: 'Lake
+
+        Non-Invasive'
       objectReference: {fileID: 0}
     - target: {fileID: 4938284502189777971, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
       propertyPath: m_Name
@@ -9374,8 +9391,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGuidedMode: 1
-  InvasiveUIPopup: {fileID: 605294553}
-  HabitatUIPopup: {fileID: 0}
+  InvasiveUIPopup: {fileID: 0}
+  HabitatUIPopup: {fileID: 1453181058}
 --- !u!1001 &8813656143326957850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9478,5 +9495,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGuidedMode: 1
-  InvasiveUIPopup: {fileID: 605294553}
-  HabitatUIPopup: {fileID: 0}
+  InvasiveUIPopup: {fileID: 0}
+  HabitatUIPopup: {fileID: 605294553}

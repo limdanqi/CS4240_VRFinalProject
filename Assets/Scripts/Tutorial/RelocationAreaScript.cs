@@ -11,7 +11,8 @@ public class RelocationAreaScript : MonoBehaviour
     [SerializeField]
     private GameObject correctAnimal;
 
-    private const string TAG_ANIMAL = "Animal";
+    [SerializeField]
+    private string TAG_ANIMAL;
 
     // Start is called before the first frame update
     void Start()

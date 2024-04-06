@@ -32,7 +32,14 @@ public class WristTimerDisplay : MonoBehaviour
 
         if (currentTime <= 0f)
         {
+            timerText.text = "Time's up!";
             SceneManager.LoadScene("GameOver");
+            GameOverManager.GetPlayerData(
+                timerString,
+                CounterController.invasiveRemaining,
+                CounterController.totalRelocateAnimals,
+                CounterController.rightHabitat
+                );
             enabled = false;
         }
     }

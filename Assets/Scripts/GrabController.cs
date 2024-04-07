@@ -4,30 +4,27 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class GrabController : MonoBehaviour
-{
-    GameObject grabbed;
+{ 
     NavMeshAgent navMeshAgent;
+    RandomMovement randomMovement;
     // Start is called before the first frame update
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        randomMovement = GetComponent<RandomMovement>();
     }
 
     public void DisableNav()
     {
         navMeshAgent.ResetPath();
         navMeshAgent.enabled = false;
+        randomMovement.SetIsGrabbing();
     }
 
     public void EnableNav()
     {
         navMeshAgent.enabled = true;
+        randomMovement.StopGrabbing(); ;
         navMeshAgent.ResetPath();
     }
 }

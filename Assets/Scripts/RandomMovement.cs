@@ -12,6 +12,7 @@ public class RandomMovement : MonoBehaviour
     public Transform centrePoint; //centre of the area the agent wants to move around in
     //instead of centrePoint you can set it as the transform of the agent if you don't care about a specific area
 
+    private bool isGrabbed;
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -20,11 +21,21 @@ public class RandomMovement : MonoBehaviour
     
     void Update()
     {
-        if(!isWaiting && agent.remainingDistance <= agent.stoppingDistance) //done with path
+        if(!isGrabbed && !isWaiting && agent.remainingDistance <= agent.stoppingDistance) //done with path
         {
             StartCoroutine(WaitAndSetDestination(2.0f));
         }
 
+    }
+
+    public void SetIsGrabbing()
+    {
+        isGrabbed = true;
+    }
+
+    public void StopGrabbing()
+    {
+        isGrabbed = false;
     }
     private void OnDrawGizmos()
     {
@@ -45,7 +56,10 @@ public class RandomMovement : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject != this && collision.gameObject.name != "Terrain" && !collision.gameObject.CompareTag("Teleport Area"))
+        if (!isGrabbed && 
+            collision.gameObject != this && 
+            collision.gameObject.name != "Terrain" && 
+            !collision.gameObject.CompareTag("Teleport Area"))
         {
             agent.ResetPath();
             isWaiting = false;

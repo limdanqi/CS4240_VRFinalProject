@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine;
 using UnityEngine.AI;
+using System.Linq;
 
 public class PetAnimalOnInput : MonoBehaviour
 {
@@ -46,7 +47,8 @@ public class PetAnimalOnInput : MonoBehaviour
         {
             Animator animator = animalsHovered[i].transform.gameObject.GetComponentInChildren<Animator>();
             animator.SetBool(ANIM_PARAM_IS_PETTING, isPetting);
-            ParticleSystem particle = animalsHovered[i].transform.gameObject.GetComponentInChildren<ParticleSystem>();
+            ParticleSystem[] particles = animalsHovered[i].transform.gameObject.GetComponentsInChildren<ParticleSystem>();
+            ParticleSystem petParticles = particles.ToList().Find(p => p.name == "Heart Particles" || p.name == "Angry Particles");
             NavMeshAgent agent = animalsHovered[i].transform.gameObject.GetComponentInChildren<NavMeshAgent>();
             if (isPetting)
             {
@@ -54,7 +56,7 @@ public class PetAnimalOnInput : MonoBehaviour
                 {
                     agent.isStopped = true;
                 }
-                particle.Play();
+                petParticles.Play();
             }
             else
             {
@@ -63,7 +65,7 @@ public class PetAnimalOnInput : MonoBehaviour
                     agent.isStopped = false;
 
                 }
-                particle.Stop();
+                petParticles.Stop();
             }
 
         }

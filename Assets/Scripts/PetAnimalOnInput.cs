@@ -14,6 +14,8 @@ public class PetAnimalOnInput : MonoBehaviour
 
     private const string ANIM_PARAM_IS_PETTING = "isPetting";
 
+    public PettingSoundEffect pettingSoundEffect; // Reference to the PettingSoundEffect component
+
     // Update is called once per frame
     void Update()
     {
@@ -22,6 +24,7 @@ public class PetAnimalOnInput : MonoBehaviour
             if (petAction.action.IsPressed()) // only interactables in environment are animals
             {
                 SetAnimalPetAnimation(interactor.interactablesHovered, true);
+                pettingSoundEffect.PlayPettingSound(); // Play petting sound
             }
 
             if (petAction.action.WasReleasedThisFrame())

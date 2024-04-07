@@ -9,6 +9,8 @@ public class WristTimerDisplay : MonoBehaviour
     private float currentTime = 0f;
     private TextMeshProUGUI timerText;
 
+    private bool hasPlayedGameEndSound = false; // Flag to track if the game end sound has been played
+
     void Start()
     {
         timerText = GetComponent<TextMeshProUGUI>();
@@ -19,6 +21,9 @@ public class WristTimerDisplay : MonoBehaviour
             return;
         }
         currentTime = countdownDuration;
+
+        // Play the game start sound when the timer starts
+        TimerSoundEffects.instance.PlayGameStartSound();
     }
 
     void Update()
@@ -35,12 +40,19 @@ public class WristTimerDisplay : MonoBehaviour
             timerText.text = "Time's up!";
             SceneManager.LoadScene("GameOver");
             GameOverManager.GetPlayerData(
-                timerString,
+                countdownDuration - currentTime,
                 CounterController.invasiveRemaining,
                 CounterController.totalRelocateAnimals,
                 CounterController.rightHabitat
                 );
             enabled = false;
+        }
+
+        // Play the game end sound when there are 5 seconds left
+        if (currentTime <= 5f && !hasPlayedGameEndSound)
+        {
+            TimerSoundEffects.instance.PlayGameEndSound();
+            hasPlayedGameEndSound = true; // Set the flag to true to ensure the sound is played only once
         }
     }
 }

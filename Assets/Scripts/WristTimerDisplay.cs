@@ -40,7 +40,7 @@ public class WristTimerDisplay : MonoBehaviour
             timerText.text = "Time's up!";
             SceneManager.LoadScene("GameOver");
             GameOverManager.GetPlayerData(
-                timerString,
+                countdownDuration - currentTime,
                 CounterController.invasiveRemaining,
                 CounterController.totalRelocateAnimals,
                 CounterController.rightHabitat

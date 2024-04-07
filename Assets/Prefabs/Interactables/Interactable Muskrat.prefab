@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4365651698546561611}
   - component: {fileID: 2582608868126370205}
   - component: {fileID: 4260946497280562913}
+  - component: {fileID: 5966186273868205328}
   m_Layer: 0
   m_Name: Interactable Muskrat
   m_TagString: Invasive
@@ -244,7 +245,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4938284502189777971}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f53f6138840d4723914d8afa172f564, type: 3}
   m_Name: 
@@ -259,7 +260,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4938284502189777971}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
@@ -284,6 +285,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bb1a431277f894a559b06624a52d5d78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5966186273868205328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4938284502189777971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cdc758cd866ed2458a63737b9228edd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &5050198410738184134

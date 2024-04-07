@@ -18,6 +18,7 @@ TagManager:
   - forestarea
   - farmarea
   - Bullet
+  - Teleport Area
   layers:
   - Default
   - TransparentFX

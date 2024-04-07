@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 3864035418821629736}
   - component: {fileID: 512350899906710390}
   - component: {fileID: 20823085152276573}
+  - component: {fileID: 6198242346199776758}
+  - component: {fileID: 4172147646726000833}
   m_Layer: 0
   m_Name: Interactable Monkey
   m_TagString: forest
@@ -273,6 +275,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cdc758cd866ed2458a63737b9228edd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!195 &6198242346199776758
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4938284502189777971}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 1
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &4172147646726000833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4938284502189777971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f53f6138840d4723914d8afa172f564, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 6198242346199776758}
+  range: 50
+  centrePoint: {fileID: 4938284502189777980}
 --- !u!1001 &470059328333434923
 PrefabInstance:
   m_ObjectHideFlags: 0

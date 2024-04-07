@@ -19,8 +19,12 @@ public class ResetRotationScript : MonoBehaviour
     {
         if (other.gameObject.name == "Terrain" || other.gameObject.CompareTag("Teleport Area"))
         {
-            Debug.Log("terrain hit");
-            gameObject.transform.rotation = Quaternion.Euler(0, gameObject.transform.rotation.y, 0);
+            float xRotate = gameObject.transform.rotation.x;
+            float zRotate = gameObject.transform.rotation.z;
+            if (xRotate != 0 && zRotate != 0)
+            {
+                gameObject.transform.rotation = Quaternion.Euler(0, gameObject.transform.rotation.y, 0);
+            }
         }
     }
 }

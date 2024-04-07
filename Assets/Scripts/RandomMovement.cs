@@ -30,6 +30,14 @@ public class RandomMovement : MonoBehaviour
         }
 
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject != this && collision.gameObject.name != "Terrain" && !collision.gameObject.CompareTag("Teleport Area"))
+        {
+            Debug.Log("something hit! " + collision.gameObject.name);
+            agent.ResetPath();
+        }
+    }
     bool RandomPoint(Vector3 center, float range, out Vector3 result)
     {
 

@@ -6,6 +6,7 @@ public class AnimalAnimationController : MonoBehaviour
 {
     Animator animator;
     string tag;
+    public ParticleSystem happyParticles;
     void Start()
     {
         animator = GetComponentInChildren<Animator>();
@@ -15,10 +16,12 @@ public class AnimalAnimationController : MonoBehaviour
     {
         if (other.gameObject.CompareTag(tag) && !other.gameObject.CompareTag("Player"))
         {
+            happyParticles.Play();
             animator.SetBool("isWrongHabitat", false);
         }
         else
         {
+            happyParticles.Stop();
             animator.SetBool("isWrongHabitat", true);
         }
     }

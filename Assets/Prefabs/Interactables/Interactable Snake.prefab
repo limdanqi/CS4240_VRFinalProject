@@ -372,6 +372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropDust: {fileID: 7081576749756127370}
+  dropSource: {fileID: 0}
 --- !u!195 &8568373875084565394
 NavMeshAgent:
   m_ObjectHideFlags: 0

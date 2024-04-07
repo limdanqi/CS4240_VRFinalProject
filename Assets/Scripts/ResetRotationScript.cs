@@ -5,8 +5,14 @@ using UnityEngine;
 public class ResetRotationScript : MonoBehaviour
 {
     public ParticleSystem dropDust;
+    public GameObject dropSource;
+    private DropSound dropSound;
     private bool isCheckRotation = false;
 
+    private void Start()
+    {
+        dropSound = dropSource.GetComponent<DropSound>();
+    }
     public void CheckRotationAfterDrop()
     {
         isCheckRotation = true;
@@ -20,6 +26,8 @@ public class ResetRotationScript : MonoBehaviour
             {
                 // only applies to dropping on land
                 dropDust.Play();
+                dropSound.PlayDropSound();
+                
             }
             float xRotate = gameObject.transform.rotation.x;
             float zRotate = gameObject.transform.rotation.z;

@@ -43,6 +43,7 @@ Transform:
   - {fileID: 3587199463805491551}
   - {fileID: 5516901890556541501}
   - {fileID: 8602462113354397449}
+  - {fileID: 4954527664569081407}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -301,6 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 141c4134eb86f0f4e8a4b1e82794d1e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  happyParticles: {fileID: 7878623460645361548}
 --- !u!114 &512350899906710390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,6 +330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropDust: {fileID: 8480527890627688001}
+  dropSource: {fileID: 0}
 --- !u!195 &6198242346199776758
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -533,6 +536,73 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5258331117553129771, guid: eb9104ef66b7305468adb3697fdeed5e, type: 3}
   m_PrefabInstance: {fileID: 5781192969322160400}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6072266930927907721
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4938284502189777980}
+    m_Modifications:
+    - target: {fileID: 1190923035187834294, guid: 7295977daac983d4d83e4b11cb1b8fd6, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190923035187834294, guid: 7295977daac983d4d83e4b11cb1b8fd6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190923035187834294, guid: 7295977daac983d4d83e4b11cb1b8fd6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.769
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190923035187834294, guid: 7295977daac983d4d83e4b11cb1b8fd6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190923035187834294, guid: 7295977daac983d4d83e4b11cb1b8fd6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190923035187834294, guid: 7295977daac983d4d83e4b11cb1b8fd6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190923035187834294, guid: 7295977daac983d4d83e4b11cb1b8fd6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190923035187834294, guid: 7295977daac983d4d83e4b11cb1b8fd6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190923035187834294, guid: 7295977daac983d4d83e4b11cb1b8fd6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190923035187834294, guid: 7295977daac983d4d83e4b11cb1b8fd6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190923035187834294, guid: 7295977daac983d4d83e4b11cb1b8fd6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4687002197422570257, guid: 7295977daac983d4d83e4b11cb1b8fd6, type: 3}
+      propertyPath: m_Name
+      value: Happy Particles
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7295977daac983d4d83e4b11cb1b8fd6, type: 3}
+--- !u!4 &4954527664569081407 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1190923035187834294, guid: 7295977daac983d4d83e4b11cb1b8fd6, type: 3}
+  m_PrefabInstance: {fileID: 6072266930927907721}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7878623460645361548 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: -5110608306555296763, guid: 7295977daac983d4d83e4b11cb1b8fd6, type: 3}
+  m_PrefabInstance: {fileID: 6072266930927907721}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8395164667337397437
 PrefabInstance:

@@ -3,17 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class InvasiveController : MonoBehaviour
-{   
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+{
+    public GameObject killInvasiveObj;
+    private KillInvasiveEffect killInvasiveEffect;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        killInvasiveEffect = killInvasiveObj.GetComponent<KillInvasiveEffect>();
     }
 
     void OnCollisionEnter(Collision collision)
@@ -25,6 +21,10 @@ public class InvasiveController : MonoBehaviour
     }
 
     public void kill() {
+        if (killInvasiveEffect)
+        {
+            killInvasiveEffect.PlayKillInvasiveSound();
+        }
         DecrementCounter();
         Destroy(gameObject);
     }

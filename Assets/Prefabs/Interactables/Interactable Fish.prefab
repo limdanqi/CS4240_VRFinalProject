@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 4190923598014455096}
   - component: {fileID: 2018011397610646307}
   - component: {fileID: 4241056686338774964}
+  - component: {fileID: 5431617235163251636}
   m_Layer: 0
   m_Name: Interactable Fish
   m_TagString: lake
@@ -112,9 +113,21 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4241056686338774964}
         m_TargetAssemblyTypeName: GrabController, Assembly-CSharp
         m_MethodName: DisableNav
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GrabSoundEffect, Assembly-CSharp
+        m_MethodName: PlayGrabSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -127,7 +140,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4241056686338774964}
         m_TargetAssemblyTypeName: GrabController, Assembly-CSharp
         m_MethodName: EnableNav
         m_Mode: 1
@@ -350,6 +363,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d871952f3565d04b8ce9d85e9f8fcd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5431617235163251636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4938284502189777971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c89b001db8a6c634c968b6b9c938b774, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundObj: {fileID: 0}
 --- !u!1001 &1998214843877407630
 PrefabInstance:
   m_ObjectHideFlags: 0

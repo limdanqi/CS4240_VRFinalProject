@@ -9557,6 +9557,10 @@ PrefabInstance:
       propertyPath: m_RenderPostProcessing
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4947455790408054587, guid: b29c0b295fc50b1499a7415960773abd, type: 3}
+      propertyPath: pettingSoundEffect
+      value: 
+      objectReference: {fileID: 1382985355}
     - target: {fileID: 8166190785825073921, guid: b29c0b295fc50b1499a7415960773abd, type: 3}
       propertyPath: m_CameraYOffset
       value: 2.36144

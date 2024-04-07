@@ -2041,6 +2041,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5473569773201559785, guid: fd8e0760db14a534a89257f68a4f2a8c, type: 3}
   m_PrefabInstance: {fileID: 486074979}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &488488157 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8563785210031221376, guid: b29c0b295fc50b1499a7415960773abd, type: 3}
+  m_PrefabInstance: {fileID: 1947221097}
+  m_PrefabAsset: {fileID: 0}
+--- !u!208 &488488164
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 488488157}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.665, y: 2.455, z: 0.59}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &523134309
 GameObject:
   m_ObjectHideFlags: 0
@@ -4177,10 +4198,6 @@ PrefabInstance:
 
         Non-Invasive'
       objectReference: {fileID: 0}
-    - target: {fileID: 7316794998256593812, guid: 3e21f9f348251814299e1e61b8896ebc, type: 3}
-      propertyPath: agent
-      value: 
-      objectReference: {fileID: 1117834697}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e21f9f348251814299e1e61b8896ebc, type: 3}
 --- !u!114 &1117834688
@@ -4198,11 +4215,6 @@ MonoBehaviour:
   isGuidedMode: 1
   InvasiveUIPopup: {fileID: 1869322634}
   HabitatUIPopup: {fileID: 1397345357}
---- !u!195 &1117834697 stripped
-NavMeshAgent:
-  m_CorrespondingSourceObject: {fileID: 5812480559426433547, guid: 3e21f9f348251814299e1e61b8896ebc, type: 3}
-  m_PrefabInstance: {fileID: 1117834681}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1125124557
 GameObject:
   m_ObjectHideFlags: 0
@@ -6017,6 +6029,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4938284502189777982, guid: 1d8e60579602b6147bde1f7ccaff3110, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1408338071}
+    - target: {fileID: 4938284502189777982, guid: 1d8e60579602b6147bde1f7ccaff3110, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1408338071}
     - target: {fileID: 4938284502189777983, guid: 1d8e60579602b6147bde1f7ccaff3110, type: 3}
       propertyPath: m_Constraints
       value: 0
@@ -6032,6 +6052,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4938284502189777980, guid: 1d8e60579602b6147bde1f7ccaff3110, type: 3}
   m_PrefabInstance: {fileID: 1408338069}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1408338071 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6355098304382023451, guid: 1d8e60579602b6147bde1f7ccaff3110, type: 3}
+  m_PrefabInstance: {fileID: 1408338069}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698662301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d871952f3565d04b8ce9d85e9f8fcd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!223 &1441938705 stripped
 Canvas:
   m_CorrespondingSourceObject: {fileID: 3440575498319206074, guid: 13c4137d32a50274897a2ecb268026a0, type: 3}
@@ -6933,6 +6964,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4938284502189777982, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
+      propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1791077178}
+    - target: {fileID: 4938284502189777982, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1791077178}
     - target: {fileID: 7726925165258932034, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
       propertyPath: prewarm
       value: 1
@@ -7768,6 +7807,17 @@ MonoBehaviour:
   isGuidedMode: 1
   InvasiveUIPopup: {fileID: 437498694}
   HabitatUIPopup: {fileID: 1366240757}
+--- !u!114 &1791077178 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4241056686338774964, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
+  m_PrefabInstance: {fileID: 1595263871}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791077161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d871952f3565d04b8ce9d85e9f8fcd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1799521164
 GameObject:
   m_ObjectHideFlags: 0
@@ -8598,9 +8648,17 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7598774078893761868, guid: b29c0b295fc50b1499a7415960773abd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8166190785825073921, guid: b29c0b295fc50b1499a7415960773abd, type: 3}
       propertyPath: m_CameraYOffset
       value: 2.36144
+      objectReference: {fileID: 0}
+    - target: {fileID: 8540316204126870276, guid: b29c0b295fc50b1499a7415960773abd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8540316204132306928, guid: b29c0b295fc50b1499a7415960773abd, type: 3}
       propertyPath: m_TagString
@@ -9862,16 +9920,8 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2582608868126370205, guid: e82aa45db2106f54abf60613d7db08b5, type: 3}
-      propertyPath: m_AngularSpeed
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 2582608868126370205, guid: e82aa45db2106f54abf60613d7db08b5, type: 3}
       propertyPath: m_StoppingDistance
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4365651698546561611, guid: e82aa45db2106f54abf60613d7db08b5, type: 3}
-      propertyPath: range
-      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4365651698546561611, guid: e82aa45db2106f54abf60613d7db08b5, type: 3}
       propertyPath: m_Enabled

@@ -46,11 +46,11 @@ public class PetAnimalOnInput : MonoBehaviour
             NavMeshAgent agent = animalsHovered[i].transform.gameObject.GetComponentInChildren<NavMeshAgent>();
             if (isPetting)
             {
-                agent.Stop();
+                agent.isStopped = true;
                 particle.Play();
             } else
             {
-                agent.Resume();
+                agent.isStopped = false;
                 particle.Stop();
             }
         }

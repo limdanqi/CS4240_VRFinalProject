@@ -26,7 +26,11 @@ public class PetAnimalOnInput : MonoBehaviour
             if (petAction.action.IsPressed()) // only interactables in environment are animals
             {
                 SetAnimalPetAnimation(interactor.interactablesHovered, true);
-                pettingSoundEffect.PlayPettingSound(); // Play petting sound
+
+                if (pettingSoundEffect != null)
+                {
+                    pettingSoundEffect.PlayPettingSound(); // Play petting sound
+                }
             }
 
             if (petAction.action.WasReleasedThisFrame())
@@ -46,13 +50,22 @@ public class PetAnimalOnInput : MonoBehaviour
             NavMeshAgent agent = animalsHovered[i].transform.gameObject.GetComponentInChildren<NavMeshAgent>();
             if (isPetting)
             {
-                agent.isStopped = true;
+                if (agent != null)
+                {
+                    agent.isStopped = true;
+                }
                 particle.Play();
-            } else
+            }
+            else
             {
-                agent.isStopped = false;
+                if (agent != null)
+                {
+                    agent.isStopped = false;
+
+                }
                 particle.Stop();
             }
+
         }
     }
 }

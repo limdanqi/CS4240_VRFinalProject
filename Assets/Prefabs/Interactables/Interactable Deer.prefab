@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 832032242372744943}
   - component: {fileID: 6420852876254579147}
   - component: {fileID: 8940134532451378228}
+  - component: {fileID: 7316794998256593812}
+  - component: {fileID: 5812480559426433547}
   m_Layer: 0
   m_Name: Interactable Deer
   m_TagString: barn
@@ -274,6 +276,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cdc758cd866ed2458a63737b9228edd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7316794998256593812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4938284502189777971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f53f6138840d4723914d8afa172f564, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  range: 30
+  centrePoint: {fileID: 4938284502189777980}
+--- !u!195 &5812480559426433547
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4938284502189777971}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &554768246721995848
 PrefabInstance:
   m_ObjectHideFlags: 0

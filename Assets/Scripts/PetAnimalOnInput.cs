@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine;
+using UnityEngine.AI;
 
 public class PetAnimalOnInput : MonoBehaviour
 {
@@ -36,17 +38,19 @@ public class PetAnimalOnInput : MonoBehaviour
 
     private void SetAnimalPetAnimation(List<IXRHoverInteractable> animalsHovered, bool isPetting)
     {
-        Debug.Log(isPetting);
         for (int i = 0; i < animalsHovered.Count; i++)
         {
             Animator animator = animalsHovered[i].transform.gameObject.GetComponentInChildren<Animator>();
             animator.SetBool(ANIM_PARAM_IS_PETTING, isPetting);
             ParticleSystem particle = animalsHovered[i].transform.gameObject.GetComponentInChildren<ParticleSystem>();
+            NavMeshAgent agent = animalsHovered[i].transform.gameObject.GetComponentInChildren<NavMeshAgent>();
             if (isPetting)
             {
+                agent.Stop();
                 particle.Play();
             } else
             {
+                agent.Resume();
                 particle.Stop();
             }
         }

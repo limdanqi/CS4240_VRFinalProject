@@ -6,7 +6,8 @@ using TMPro;
 public class GameOverManager : MonoBehaviour
 {
     private static float timeToComplete;
-    private static int invasiveLeftFinal;
+    private static int invasiveKilledFinal;
+    private static int totalAttemptedKillFinal;
     private static int totalRelocateFinal;
     private static int rightHabitatFinal; 
     public TextMeshProUGUI invasiveDataUI;
@@ -26,17 +27,19 @@ public class GameOverManager : MonoBehaviour
         
     }
 
-    static public void GetPlayerData(float time, int invasiveLeft, int totalRelocate, int rightHabitat)
+    static public void GetPlayerData(float time, int invasiveKilled, int totalAttemptedKills, int totalRelocate, int rightHabitat)
     {
         timeToComplete = time;
-        invasiveLeftFinal = invasiveLeft;
+        invasiveKilledFinal = invasiveKilled;
+        totalAttemptedKillFinal = totalAttemptedKills;
         totalRelocateFinal = totalRelocate;
         rightHabitatFinal = rightHabitat;
     }
 
     void displayPlayerData()
     {
-        invasiveDataUI.text = string.Format("You have removed {0} invasive species", invasiveLeftFinal);
+        float wrongSpeciesKilled = ((float)(totalAttemptedKillFinal - invasiveKilledFinal)/totalAttemptedKillFinal) * 100;
+        invasiveDataUI.text = string.Format("Your error rate is {0}%", (int)wrongSpeciesKilled);
         float correctRelocatePercentage = ((float)rightHabitatFinal / totalRelocateFinal) * 100;
         relocateDataUI.text = string.Format("You have relocated {0}% of animals", (int)correctRelocatePercentage);
         int minutes = Mathf.FloorToInt(timeToComplete / 60);
@@ -48,7 +51,7 @@ public class GameOverManager : MonoBehaviour
     void printPlayerData()
     {
         Debug.Log(timeToComplete);
-        Debug.Log(invasiveLeftFinal);
+        Debug.Log(invasiveKilledFinal);
         Debug.Log(totalRelocateFinal);
         Debug.Log(rightHabitatFinal);
     }

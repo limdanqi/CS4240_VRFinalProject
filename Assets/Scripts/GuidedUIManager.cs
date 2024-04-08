@@ -43,6 +43,7 @@ public class GuidedUIManager : MonoBehaviour
     {
         if (isGuidedMode && other.gameObject.CompareTag("Bullet") && gameObject.tag != "Invasive")
         {
+            AnimalController.IncrementKillCounter();
             EnableInvasiveCanvas();
             Invoke("DisableInvasiveCanvas", 2f);
 

@@ -52,7 +52,7 @@ public class PetAnimalOnInput : MonoBehaviour
             NavMeshAgent agent = animalsHovered[i].transform.gameObject.GetComponentInChildren<NavMeshAgent>();
             if (isPetting)
             {
-                if (agent != null)
+                if (agent != null && agent.isActiveAndEnabled)
                 {
                     agent.isStopped = true;
                 }
@@ -60,7 +60,7 @@ public class PetAnimalOnInput : MonoBehaviour
             }
             else
             {
-                if (agent != null)
+                if (agent != null && agent.isActiveAndEnabled)
                 {
                     agent.isStopped = false;
 

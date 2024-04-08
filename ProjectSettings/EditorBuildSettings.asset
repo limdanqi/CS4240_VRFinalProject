@@ -5,16 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TutorialScene 1.unity
     guid: 1ac406d2572645242aa5e8bc97e9003f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/UpdatedEnv.unity
     guid: dfb6a05fedbc8ff4b9d78e410c904ebf
   - enabled: 1
+    path: Assets/Scenes/YiyangUpdatedEnv.unity
+    guid: 32ca4519d20ab2b4ea186c720b0c2988
+  - enabled: 0
     path: Assets/Scenes/UnguidedTest.unity
     guid: aa07e2855251cc8469499ad50f567e90
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/GameOver.unity
     guid: 7d00fc11a1699b34d8e59ba6838b413c
   m_configObjects:

@@ -31,11 +31,22 @@ public class RandomMovement : MonoBehaviour
     public void SetIsGrabbing()
     {
         isGrabbed = true;
+        agent.enabled = false;
+        Debug.Log("Agent set as " + agent.enabled);
     }
 
     public void StopGrabbing()
     {
         isGrabbed = false;
+        Debug.Log("Agent is " + agent.enabled);
+        // Check if the current position is on the NavMesh
+        NavMeshHit hit;
+        Debug.Log("dropped");
+        if (NavMesh.SamplePosition(transform.position, out hit, 0.5f, NavMesh.AllAreas))
+        {
+            Debug.Log("dropped on valid position");
+            agent.enabled = true;
+        }
     }
     private void OnDrawGizmos()
     {
@@ -43,20 +54,24 @@ public class RandomMovement : MonoBehaviour
     }
     private IEnumerator WaitAndSetDestination(float waitTime)
     {
-        isWaiting = true; // Set the flag to true
-        yield return new WaitForSeconds(waitTime); // Wait for the specified time
-
-        Vector3 point;
-        if (RandomPoint(centrePoint.position, range, out point))
+        if (agent.isActiveAndEnabled)
         {
-            Debug.DrawRay(point, Vector3.up, Color.blue, 1.0f); // Visualize the destination point
-            agent.SetDestination(point); // Set the agent's destination
+            isWaiting = true; // Set the flag to true
+            yield return new WaitForSeconds(waitTime); // Wait for the specified time
+
+            Vector3 point;
+            if (RandomPoint(centrePoint.position, range, out point))
+            {
+                Debug.DrawRay(point, Vector3.up, Color.blue, 1.0f); // Visualize the destination point
+                agent.SetDestination(point); // Set the agent's destination
+            }
+            isWaiting = false; // Reset the flag
         }
-        isWaiting = false; // Reset the flag
     }
     private void OnCollisionEnter(Collision collision)
     {
         if (!isGrabbed && 
+            agent.isActiveAndEnabled &&
             collision.gameObject != this && 
             collision.gameObject.name != "Terrain" && 
             !collision.gameObject.CompareTag("Teleport Area"))
@@ -78,7 +93,7 @@ public class RandomMovement : MonoBehaviour
                 return true;
             }
         }
-        result = Vector3.zero;
+        result = agent.gameObject.transform.position;
         return false;
     }
 

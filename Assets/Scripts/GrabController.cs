@@ -23,7 +23,6 @@ public class GrabController : MonoBehaviour
 
     public void EnableNav()
     {
-        navMeshAgent.enabled = true;
         randomMovement.StopGrabbing(); ;
         navMeshAgent.ResetPath();
     }

@@ -11,6 +11,7 @@ public class GameRespawn : MonoBehaviour
     {
         if (other.gameObject.tag == "lakearea")
         {
+            Debug.Log("dropped something in lake");
             Vector3 respawnPosition = transform.position.x < 120 ? respawnPosition1 : respawnPosition2;
             transform.position = respawnPosition;
         }

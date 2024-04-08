@@ -409,7 +409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 8568373875084565394}
-  range: 10
+  range: 5
   centrePoint: {fileID: 4938284502189777980}
 --- !u!114 &7719043741577269072
 MonoBehaviour:

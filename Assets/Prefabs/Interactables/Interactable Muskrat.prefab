@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 5966186273868205328}
   - component: {fileID: 7316585987324144132}
   - component: {fileID: 1291537342142783399}
+  - component: {fileID: 6260068470669437205}
   m_Layer: 0
   m_Name: Interactable Muskrat
   m_TagString: Invasive
@@ -338,7 +339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1a431277f894a559b06624a52d5d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  killInvasiveObj: {fileID: 0}
+  killInvasiveObj: {fileID: 3737000128072824005, guid: d56193847f0694ea6b5566d19b014a94, type: 3}
 --- !u!114 &5966186273868205328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,7 +353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropDust: {fileID: 2180999759766492234}
-  dropSource: {fileID: 0}
+  dropSource: {fileID: 3932550273073414624, guid: 0a5dfbced95d745d3a14ef4d0a05c973, type: 3}
 --- !u!114 &7316585987324144132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,6 +378,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef611e381c1d8497fbe2843306c98d3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6260068470669437205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4938284502189777971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1da7323f2a234f748af31a17b3124401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGuidedMode: 1
+  InvasiveUIPopup: {fileID: 0}
+  HabitatUIPopup: {fileID: 3923368106201425341}
 --- !u!1 &5050198410738184134
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,6 +739,11 @@ PrefabInstance:
 --- !u!4 &184991516125098591 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5244496932525087081, guid: 4e2c2981e81803649a8be3f032e4bcef, type: 3}
+  m_PrefabInstance: {fileID: 5357325196268170038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!223 &3923368106201425341 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 8947403829929561739, guid: 4e2c2981e81803649a8be3f032e4bcef, type: 3}
   m_PrefabInstance: {fileID: 5357325196268170038}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5781192969322160400

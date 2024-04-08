@@ -17,16 +17,24 @@ public class RelocationController : MonoBehaviour
     {
         animal = GameObject.FindGameObjectWithTag(habitatTag);
         isCorrectHabitat = IsInCorrectHabitat(animal, habitatTag);
+        if (isCorrectHabitat) {
+            Debug.Log("correct habitat");
+        } else {
+            Debug.Log("incorrect habitat");
+        }
         splashSound = splashSoundObj.GetComponent<SplashSound>();
     }
     
     void OnTriggerEnter(Collider other)
     {
         if (habitatTag.EndsWith("area")) {
+            Debug.Log("detects other colider with sth that ends in area");
             if (!isCorrectHabitat) {
+                Debug.Log("initially incorrect");
                 if (other.gameObject.CompareTag(habitatTag))
                 {
                     CounterController.IncrementRelocate();
+                    Debug.Log("increment counter");
                     isCorrectHabitat = !isCorrectHabitat;
                     if (habitatTag =="lakearea")
                     {

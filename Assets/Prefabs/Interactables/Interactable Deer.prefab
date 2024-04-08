@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 2820256249921571320}
   - component: {fileID: 8641166753164179757}
   - component: {fileID: 8183975140732523568}
+  - component: {fileID: 839913814558953669}
   m_Layer: 0
   m_Name: Interactable Deer
   m_TagString: barn
@@ -318,7 +319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   habitatTag: barnarea
-  splashSoundObj: {fileID: 0}
+  splashSoundObj: {fileID: 866695137407205730, guid: a3035e07f08244e1ab616a74a1358335, type: 3}
 --- !u!114 &8940134532451378228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -332,7 +333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropDust: {fileID: 7640510766100174812}
-  dropSource: {fileID: 0}
+  dropSource: {fileID: 3932550273073414624, guid: 0a5dfbced95d745d3a14ef4d0a05c973, type: 3}
 --- !u!114 &7316794998256593812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -394,7 +395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c89b001db8a6c634c968b6b9c938b774, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundObj: {fileID: 0}
+  soundObj: {fileID: 3122919226295942011, guid: 159b3fbee1f384df298a7ba95c5af14d, type: 3}
 --- !u!114 &8183975140732523568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -407,6 +408,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef611e381c1d8497fbe2843306c98d3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &839913814558953669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4938284502189777971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1da7323f2a234f748af31a17b3124401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGuidedMode: 1
+  InvasiveUIPopup: {fileID: 6259674474512508728}
+  HabitatUIPopup: {fileID: 6259674473795939745}
 --- !u!1001 &554768246721995848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -787,6 +803,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4938284502189777980}
     m_Modifications:
+    - target: {fileID: 3440575498538280335, guid: 13c4137d32a50274897a2ecb268026a0, type: 3}
+      propertyPath: m_text
+      value: 'Barn
+
+        Non-Invasive'
+      objectReference: {fileID: 0}
     - target: {fileID: 3754508232115757838, guid: 13c4137d32a50274897a2ecb268026a0, type: 3}
       propertyPath: m_Name
       value: UI Tag (Non-Invasive)
@@ -852,5 +874,15 @@ PrefabInstance:
 --- !u!4 &5646668207677630989 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3980420359605752086, guid: 13c4137d32a50274897a2ecb268026a0, type: 3}
+  m_PrefabInstance: {fileID: 8746471972723325723}
+  m_PrefabAsset: {fileID: 0}
+--- !u!223 &6259674473795939745 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 3440575498319206074, guid: 13c4137d32a50274897a2ecb268026a0, type: 3}
+  m_PrefabInstance: {fileID: 8746471972723325723}
+  m_PrefabAsset: {fileID: 0}
+--- !u!223 &6259674474512508728 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 3440575498767342627, guid: 13c4137d32a50274897a2ecb268026a0, type: 3}
   m_PrefabInstance: {fileID: 8746471972723325723}
   m_PrefabAsset: {fileID: 0}

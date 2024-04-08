@@ -18,10 +18,10 @@ public class RandomMovement : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
     }
 
-    
+
     void Update()
     {
-        if(!isGrabbed && !isWaiting && agent.remainingDistance <= agent.stoppingDistance) //done with path
+        if (!isGrabbed && !isWaiting && agent.remainingDistance <= agent.stoppingDistance) //done with path
         {
             StartCoroutine(WaitAndSetDestination(2.0f));
         }
@@ -42,7 +42,7 @@ public class RandomMovement : MonoBehaviour
         // Check if the current position is on the NavMesh
         NavMeshHit hit;
         Debug.Log("dropped");
-        if (NavMesh.SamplePosition(transform.position, out hit, 0.5f, NavMesh.AllAreas))
+        if (NavMesh.SamplePosition(transform.position, out hit, 1.0f, NavMesh.AllAreas))
         {
             Debug.Log("dropped on valid position");
             agent.enabled = true;
@@ -70,10 +70,10 @@ public class RandomMovement : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (!isGrabbed && 
+        if (!isGrabbed &&
             agent.isActiveAndEnabled &&
-            collision.gameObject != this && 
-            collision.gameObject.name != "Terrain" && 
+            collision.gameObject != this &&
+            collision.gameObject.name != "Terrain" &&
             !collision.gameObject.CompareTag("Teleport Area"))
         {
             agent.ResetPath();

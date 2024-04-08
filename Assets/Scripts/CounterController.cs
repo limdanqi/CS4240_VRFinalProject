@@ -8,6 +8,7 @@ public class CounterController : MonoBehaviour
     public static int totalRelocateAnimals;
     public static int rightHabitat;
     public static int invasiveRemaining;
+    public static int initialInvasives;
     private TextMeshProUGUI counterText;
 
     void Start()
@@ -97,6 +98,7 @@ public class CounterController : MonoBehaviour
         invasiveRemaining = 0;
         GameObject[] invasiveAnimals = GameObject.FindGameObjectsWithTag("Invasive");
         invasiveRemaining += invasiveAnimals.Length;
+        initialInvasives = invasiveRemaining;
     }
 
     void DisplayCounts()

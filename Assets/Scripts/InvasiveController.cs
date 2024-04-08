@@ -26,6 +26,7 @@ public class InvasiveController : MonoBehaviour
             killInvasiveEffect.PlayKillInvasiveSound();
         }
         DecrementCounter();
+        AnimalController.IncrementKillCounter();
         Destroy(gameObject);
     }
 

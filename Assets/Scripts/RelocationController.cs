@@ -27,7 +27,7 @@ public class RelocationController : MonoBehaviour
     
     void OnTriggerEnter(Collider other)
     {
-        if (habitatTag.EndsWith("area")) {
+        if (other.gameObject.tag.EndsWith("area")) {
             Debug.Log("detects other colider with sth that ends in area");
             if (!isCorrectHabitat) {
                 Debug.Log("initially incorrect");

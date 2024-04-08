@@ -5,8 +5,8 @@ using TMPro;
 
 public class WristTimerDisplay : MonoBehaviour
 {
-    public float countdownDuration = 10f; 
-    private float currentTime = 0f;
+    public static float countdownDuration = 300f; 
+    private static float currentTime = 0f;
     private TextMeshProUGUI timerText;
 
     private bool hasPlayedGameEndSound = false; // Flag to track if the game end sound has been played
@@ -55,5 +55,10 @@ public class WristTimerDisplay : MonoBehaviour
             TimerSoundEffects.instance.PlayGameEndSound();
             hasPlayedGameEndSound = true; // Set the flag to true to ensure the sound is played only once
         }
+    }
+
+    public static float getTimeElapsed()
+    {
+        return countdownDuration - currentTime;
     }
 }

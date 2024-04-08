@@ -16,12 +16,18 @@ public class AnimalAnimationController : MonoBehaviour
     {
         if (other.gameObject.CompareTag(tag) && !other.gameObject.CompareTag("Player"))
         {
-            happyParticles.Play();
+            if (!happyParticles.isPlaying)
+            {
+                happyParticles.Play();
+            }
             animator.SetBool("isWrongHabitat", false);
         }
         else
         {
-            happyParticles.Stop();
+            if (happyParticles.isPlaying)
+            {
+                happyParticles.Stop();
+            }
             animator.SetBool("isWrongHabitat", true);
         }
     }

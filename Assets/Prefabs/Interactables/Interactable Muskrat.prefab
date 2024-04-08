@@ -302,7 +302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 2582608868126370205}
-  range: 3
+  range: 10
   centrePoint: {fileID: 4938284502189777980}
 --- !u!195 &2582608868126370205
 NavMeshAgent:

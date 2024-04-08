@@ -37,7 +37,8 @@ public class GameOverManager : MonoBehaviour
     void displayPlayerData()
     {
         invasiveDataUI.text = string.Format("You have removed {0} invasive species", invasiveLeftFinal);
-        relocateDataUI.text = string.Format("You have relocated {0} animals", totalRelocateFinal);
+        float correctRelocatePercentage = ((float)rightHabitatFinal / totalRelocateFinal) * 100;
+        relocateDataUI.text = string.Format("You have relocated {0}% of animals", (int)correctRelocatePercentage);
         int minutes = Mathf.FloorToInt(timeToComplete / 60);
         int seconds = Mathf.FloorToInt(timeToComplete % 60);
         string timerString = string.Format("You took {0:00}:{1:00} mins", minutes, seconds);

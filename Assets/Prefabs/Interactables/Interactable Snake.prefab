@@ -76,6 +76,7 @@ GameObject:
   - component: {fileID: 8568373875084565394}
   - component: {fileID: 5470249678752096536}
   - component: {fileID: 7719043741577269072}
+  - component: {fileID: 325629125401718144}
   m_Layer: 0
   m_Name: Interactable Snake
   m_TagString: Invasive
@@ -420,6 +421,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d871952f3565d04b8ce9d85e9f8fcd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &325629125401718144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4938284502189777971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef611e381c1d8497fbe2843306c98d3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &441495071413475232

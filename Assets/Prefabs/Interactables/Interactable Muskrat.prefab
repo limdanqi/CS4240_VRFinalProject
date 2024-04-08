@@ -126,7 +126,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 4580926231687755428, guid: 0c46a4d0751d94094a841acb2a879056, type: 3}
         m_TargetAssemblyTypeName: GrabSoundEffect, Assembly-CSharp
         m_MethodName: PlayGrabSound
         m_Mode: 1

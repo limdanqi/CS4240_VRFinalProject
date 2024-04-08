@@ -2503,7 +2503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pettingSoundSource: {fileID: 431526465}
-  pettingSoundClip: {fileID: 8300000, guid: 3b4430ace692b5a4dbb80ec14d3e8550, type: 3}
+  pettingSoundClip: {fileID: 8300000, guid: ffbfbd8cbe30a524aa80d0fd74b8ace2, type: 3}
 --- !u!82 &431526465
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2514,7 +2514,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3b4430ace692b5a4dbb80ec14d3e8550, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ffbfbd8cbe30a524aa80d0fd74b8ace2, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -5799,7 +5799,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ecde03c100dcdd4c89ca2cfee5a3bd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countdownDuration: 300
 --- !u!114 &915838645
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -17,6 +17,7 @@ public class PetAnimalOnInput : MonoBehaviour
 
     private const string ANIM_PARAM_IS_PETTING = "isPetting";
 
+    private bool isCurrentlyPetting;
     public PettingSoundEffect pettingSoundEffect; // Reference to the PettingSoundEffect component
 
     // Update is called once per frame
@@ -28,9 +29,9 @@ public class PetAnimalOnInput : MonoBehaviour
             {
                 SetAnimalPetAnimation(interactor.interactablesHovered, true);
 
-                if (pettingSoundEffect != null)
+                if (pettingSoundEffect != null && !isCurrentlyPetting)
                 {
-                    pettingSoundEffect.PlayPettingSound(); // Play petting sound
+                    StartCoroutine(PetAnimalSound());
                 }
             }
 
@@ -39,6 +40,14 @@ public class PetAnimalOnInput : MonoBehaviour
                 SetAnimalPetAnimation(interactor.interactablesHovered, false);
             }
         }
+    }
+
+    private IEnumerator PetAnimalSound()
+    {
+        isCurrentlyPetting = true;
+        yield return new WaitForSeconds(0.8f);
+        pettingSoundEffect.PlayPettingSound(); // Play petting sound
+        isCurrentlyPetting = false;
     }
 
     private void SetAnimalPetAnimation(List<IXRHoverInteractable> animalsHovered, bool isPetting)

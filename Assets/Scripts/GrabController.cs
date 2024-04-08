@@ -20,7 +20,6 @@ public class GrabController : MonoBehaviour
         if (navMeshAgent != null && randomMovement != null)
         {
             navMeshAgent.ResetPath();
-            navMeshAgent.enabled = false;
             randomMovement.SetIsGrabbing();
         }
 
@@ -28,17 +27,10 @@ public class GrabController : MonoBehaviour
 
     public void EnableNav()
     {
-<<<<<<< HEAD
-        randomMovement.StopGrabbing(); ;
-        navMeshAgent.ResetPath();
-=======
         if (navMeshAgent != null && randomMovement != null)
         {
-            navMeshAgent.enabled = true;
             randomMovement.StopGrabbing(); ;
             navMeshAgent.ResetPath();
         }
-
->>>>>>> 5557eeb22dc9434915655f9d313448e901dc542a
     }
 }

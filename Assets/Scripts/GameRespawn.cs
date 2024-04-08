@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GameRespawn : MonoBehaviour
 {
-    private Vector3 respawnPosition1 = new Vector3(106.45f, 2.026628f, 138.7f);
-    private Vector3 respawnPosition2 = new Vector3(123.47f, 2.026628f, 124.226f);
+    private Vector3 respawnPosition1 = new Vector3(98.33f, 2.048678f, 131.5686f);
+    private Vector3 respawnPosition2 = new Vector3(124.3336f, 2.026643f, 124.712f);
 
     void OnTriggerEnter(Collider other)
     {

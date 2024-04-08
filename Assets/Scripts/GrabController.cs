@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class GrabController : MonoBehaviour
-{ 
+{
     NavMeshAgent navMeshAgent;
     RandomMovement randomMovement;
     // Start is called before the first frame update
@@ -16,15 +16,24 @@ public class GrabController : MonoBehaviour
 
     public void DisableNav()
     {
-        navMeshAgent.ResetPath();
-        navMeshAgent.enabled = false;
-        randomMovement.SetIsGrabbing();
+
+        if (navMeshAgent != null && randomMovement != null)
+        {
+            navMeshAgent.ResetPath();
+            navMeshAgent.enabled = false;
+            randomMovement.SetIsGrabbing();
+        }
+
     }
 
     public void EnableNav()
     {
-        navMeshAgent.enabled = true;
-        randomMovement.StopGrabbing(); ;
-        navMeshAgent.ResetPath();
+        if (navMeshAgent != null && randomMovement != null)
+        {
+            navMeshAgent.enabled = true;
+            randomMovement.StopGrabbing(); ;
+            navMeshAgent.ResetPath();
+        }
+
     }
 }

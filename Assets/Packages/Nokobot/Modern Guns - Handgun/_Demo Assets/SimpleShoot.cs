@@ -26,6 +26,9 @@ public class SimpleShoot : MonoBehaviour
     [Header("Input")]
     [SerializeField] private InputActionProperty fireAction;
 
+    public GameObject gunSoundObj;
+    private GunSoundManager gunSoundManager;
+
     private bool isPressing = false;
 
 
@@ -36,6 +39,7 @@ public class SimpleShoot : MonoBehaviour
 
         if (gunAnimator == null)
             gunAnimator = GetComponentInChildren<Animator>();
+        gunSoundManager = gunSoundObj.GetComponent<GunSoundManager>();
     }
 
     void Update()
@@ -59,6 +63,10 @@ public class SimpleShoot : MonoBehaviour
     //This function creates the bullet behavior
     void Shoot()
     {
+        if (gunSoundManager)
+        {
+            gunSoundManager.PlayGunSound();
+        }
         if (muzzleFlashPrefab)
         {
             //Create the muzzle flash

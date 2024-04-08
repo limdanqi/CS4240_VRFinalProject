@@ -7,10 +7,12 @@ public class RandomMovement : MonoBehaviour
 {
     public NavMeshAgent agent;
     public float range; //radius of sphere
+    private bool isWaiting;
 
     public Transform centrePoint; //centre of the area the agent wants to move around in
     //instead of centrePoint you can set it as the transform of the agent if you don't care about a specific area
 
+    private bool isGrabbed;
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -19,33 +21,66 @@ public class RandomMovement : MonoBehaviour
     
     void Update()
     {
-        if(agent.remainingDistance <= agent.stoppingDistance) //done with path
+        if(!isGrabbed && !isWaiting && agent.remainingDistance <= agent.stoppingDistance) //done with path
         {
-            Vector3 point;
-            if (RandomPoint(centrePoint.position, range, out point)) //pass in our centre point and radius of area
-            {
-                Debug.DrawRay(point, Vector3.up, Color.blue, 1.0f); //so you can see with gizmos
-                agent.SetDestination(point);
-            }
+            StartCoroutine(WaitAndSetDestination(2.0f));
         }
 
     }
+
+    public void SetIsGrabbing()
+    {
+        isGrabbed = true;
+    }
+
+    public void StopGrabbing()
+    {
+        isGrabbed = false;
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(centrePoint.position, range);
+    }
+    private IEnumerator WaitAndSetDestination(float waitTime)
+    {
+        isWaiting = true; // Set the flag to true
+        yield return new WaitForSeconds(waitTime); // Wait for the specified time
+
+        Vector3 point;
+        if (RandomPoint(centrePoint.position, range, out point))
+        {
+            Debug.DrawRay(point, Vector3.up, Color.blue, 1.0f); // Visualize the destination point
+            agent.SetDestination(point); // Set the agent's destination
+        }
+        isWaiting = false; // Reset the flag
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (!isGrabbed && 
+            collision.gameObject != this && 
+            collision.gameObject.name != "Terrain" && 
+            !collision.gameObject.CompareTag("Teleport Area"))
+        {
+            agent.ResetPath();
+            isWaiting = false;
+        }
+    }
+
     bool RandomPoint(Vector3 center, float range, out Vector3 result)
     {
-
-        Vector3 randomPoint = center + Random.insideUnitSphere * range; //random point in a sphere 
-        NavMeshHit hit;
-        if (NavMesh.SamplePosition(randomPoint, out hit, 1.0f, NavMesh.AllAreas)) //documentation: https://docs.unity3d.com/ScriptReference/AI.NavMesh.SamplePosition.html
-        { 
-            //the 1.0f is the max distance from the random point to a point on the navmesh, might want to increase if range is big
-            //or add a for loop like in the documentation
-            result = hit.position;
-            return true;
+        for (int i = 0; i < 30; i++)
+        {
+            Vector3 randomPoint = center + Random.insideUnitSphere * range;
+            NavMeshHit hit;
+            if (NavMesh.SamplePosition(randomPoint, out hit, 1.0f, NavMesh.AllAreas))
+            {
+                result = hit.position;
+                return true;
+            }
         }
-
         result = Vector3.zero;
         return false;
     }
 
-    
+
 }

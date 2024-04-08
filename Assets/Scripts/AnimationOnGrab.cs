@@ -11,6 +11,7 @@ public class AnimationOnGrab : MonoBehaviour
     [SerializeField]
     private GameObject animatorObject;
 
+
     // Start is called before the first frame update
     void Start()
     {

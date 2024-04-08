@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class RelocationController : MonoBehaviour
@@ -7,18 +8,16 @@ public class RelocationController : MonoBehaviour
     private GameObject animal;
     private bool isCorrectHabitat;
     public string habitatTag;
+
+    public GameObject splashSoundObj;
+    private SplashSound splashSound;
     
     // Start is called before the first frame update
     void Start()
     {
         animal = GameObject.FindGameObjectWithTag(habitatTag);
         isCorrectHabitat = IsInCorrectHabitat(animal, habitatTag);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        splashSound = splashSoundObj.GetComponent<SplashSound>();
     }
     
     void OnTriggerEnter(Collider other)
@@ -29,6 +28,16 @@ public class RelocationController : MonoBehaviour
                 {
                     CounterController.IncrementRelocate();
                     isCorrectHabitat = !isCorrectHabitat;
+                    if (habitatTag =="lakearea")
+                    {
+                        ParticleSystem[] particleSystems = GetComponentsInChildren<ParticleSystem>();
+                        ParticleSystem splashParticles = particleSystems.ToList().Find(p => p.name == "Splash");
+                        splashParticles.Play();
+                        if (splashSound)
+                        {
+                            splashSound.PlaySplashSound();
+                        }
+                    }
                 }
             } else {
                 if (!other.gameObject.CompareTag(habitatTag))

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine;
+using UnityEngine.AI;
+using System.Linq;
 
 public class PetAnimalOnInput : MonoBehaviour
 {
@@ -14,6 +17,8 @@ public class PetAnimalOnInput : MonoBehaviour
 
     private const string ANIM_PARAM_IS_PETTING = "isPetting";
 
+    public PettingSoundEffect pettingSoundEffect; // Reference to the PettingSoundEffect component
+
     // Update is called once per frame
     void Update()
     {
@@ -22,6 +27,11 @@ public class PetAnimalOnInput : MonoBehaviour
             if (petAction.action.IsPressed()) // only interactables in environment are animals
             {
                 SetAnimalPetAnimation(interactor.interactablesHovered, true);
+
+                if (pettingSoundEffect != null)
+                {
+                    pettingSoundEffect.PlayPettingSound(); // Play petting sound
+                }
             }
 
             if (petAction.action.WasReleasedThisFrame())
@@ -33,19 +43,31 @@ public class PetAnimalOnInput : MonoBehaviour
 
     private void SetAnimalPetAnimation(List<IXRHoverInteractable> animalsHovered, bool isPetting)
     {
-        Debug.Log(isPetting);
         for (int i = 0; i < animalsHovered.Count; i++)
         {
             Animator animator = animalsHovered[i].transform.gameObject.GetComponentInChildren<Animator>();
             animator.SetBool(ANIM_PARAM_IS_PETTING, isPetting);
-            ParticleSystem particle = animalsHovered[i].transform.gameObject.GetComponentInChildren<ParticleSystem>();
+            ParticleSystem[] particles = animalsHovered[i].transform.gameObject.GetComponentsInChildren<ParticleSystem>();
+            ParticleSystem petParticles = particles.ToList().Find(p => p.name == "Heart Particles" || p.name == "Angry Particles");
+            NavMeshAgent agent = animalsHovered[i].transform.gameObject.GetComponentInChildren<NavMeshAgent>();
             if (isPetting)
             {
-                particle.Play();
-            } else
-            {
-                particle.Stop();
+                if (agent != null)
+                {
+                    agent.isStopped = true;
+                }
+                petParticles.Play();
             }
+            else
+            {
+                if (agent != null)
+                {
+                    agent.isStopped = false;
+
+                }
+                petParticles.Stop();
+            }
+
         }
     }
 }

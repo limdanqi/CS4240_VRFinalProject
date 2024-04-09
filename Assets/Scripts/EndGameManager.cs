@@ -28,6 +28,7 @@ public class EndGameManager : MonoBehaviour
         GameOverManager.GetPlayerData(
                 WristTimerDisplay.getTimeElapsed(),
                 CounterController.initialInvasives - CounterController.invasiveRemaining,
+                CounterController.initialInvasives,
                 AnimalController.totalAttemptedKills,
                 CounterController.totalRelocateAnimals,
                 CounterController.rightHabitat

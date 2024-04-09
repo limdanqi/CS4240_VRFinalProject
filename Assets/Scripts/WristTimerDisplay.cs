@@ -42,6 +42,7 @@ public class WristTimerDisplay : MonoBehaviour
             GameOverManager.GetPlayerData(
                 countdownDuration - currentTime,
                 CounterController.initialInvasives - CounterController.invasiveRemaining,
+                CounterController.initialInvasives,
                 AnimalController.totalAttemptedKills,
                 CounterController.totalRelocateAnimals,
                 CounterController.rightHabitat

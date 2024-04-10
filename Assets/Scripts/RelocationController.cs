@@ -15,12 +15,12 @@ public class RelocationController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        animal = GameObject.FindGameObjectWithTag(habitatTag);
+        animal = this.gameObject;
         isCorrectHabitat = IsInCorrectHabitat(animal, habitatTag);
         if (isCorrectHabitat) {
-            Debug.Log("correct habitat");
+            Debug.Log(gameObject.name + " correct habitat");
         } else {
-            Debug.Log("incorrect habitat");
+            Debug.Log(gameObject.name + " incorrect habitat");
         }
         splashSound = splashSoundObj.GetComponent<SplashSound>();
     }
@@ -50,6 +50,7 @@ public class RelocationController : MonoBehaviour
             } else {
                 if (!other.gameObject.CompareTag(habitatTag))
                 {
+                    Debug.Log("Decremented counter: " + habitatTag + " " + gameObject.name);
                     CounterController.DecrementRelocate();
                     isCorrectHabitat = !isCorrectHabitat;
                 }
@@ -59,10 +60,15 @@ public class RelocationController : MonoBehaviour
 
     bool IsInCorrectHabitat(GameObject animal, string habitatTag)
     {
-        Collider collider = animal.GetComponent<Collider>();
-        if (collider != null && collider.bounds.Contains(animal.transform.position))
+        GameObject[] habitatObjects = GameObject.FindGameObjectsWithTag(habitatTag);
+
+        foreach (GameObject habitatObject in habitatObjects)
         {
-            return true;
+            Collider collider = habitatObject.GetComponent<Collider>();
+            if (collider != null && collider.bounds.Contains(animal.transform.position))
+            {
+                return true;
+            }
         }
         return false;
     }

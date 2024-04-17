@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 0f0481e0cc1f30145916c70b8116d14d, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 07fc8917446e1614eb59c4144595fb01, type: 2}
 --- !u!1 &26699016
 GameObject:
   m_ObjectHideFlags: 0
@@ -2552,6 +2552,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 399849635}
     m_Modifications:
+    - target: {fileID: 839913814558953669, guid: 3e21f9f348251814299e1e61b8896ebc, type: 3}
+      propertyPath: isGuidedMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4938284502189777971, guid: 3e21f9f348251814299e1e61b8896ebc, type: 3}
       propertyPath: m_Name
       value: Interactable Deer (1)
@@ -3734,6 +3738,10 @@ PrefabInstance:
       propertyPath: dropSource
       value: 
       objectReference: {fileID: 1716638154}
+    - target: {fileID: 6260068470669437205, guid: e82aa45db2106f54abf60613d7db08b5, type: 3}
+      propertyPath: isGuidedMode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e82aa45db2106f54abf60613d7db08b5, type: 3}
 --- !u!4 &426048715 stripped
@@ -5479,6 +5487,10 @@ PrefabInstance:
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: PlayGrabSound
       objectReference: {fileID: 0}
+    - target: {fileID: 7756406091703188380, guid: 7a2c09a808dd7f443a3dab518964a050, type: 3}
+      propertyPath: isGuidedMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7889943356106517998, guid: 7a2c09a808dd7f443a3dab518964a050, type: 3}
       propertyPath: killInvasiveObj
       value: 
@@ -5825,6 +5837,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 399849635}
     m_Modifications:
+    - target: {fileID: 2947352842002863972, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
+      propertyPath: isGuidedMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4938284502189777971, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
       propertyPath: m_Name
       value: Interactable Fish (2)
@@ -6081,6 +6097,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 399849635}
     m_Modifications:
+    - target: {fileID: 2947352842002863972, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
+      propertyPath: isGuidedMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4938284502189777971, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
       propertyPath: m_Name
       value: Interactable Fish (1)
@@ -6705,6 +6725,10 @@ PrefabInstance:
     - target: {fileID: 4938284502189777982, guid: 1d8e60579602b6147bde1f7ccaff3110, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: PlayGrabSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 5113017897059135757, guid: 1d8e60579602b6147bde1f7ccaff3110, type: 3}
+      propertyPath: isGuidedMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8985606386611497945, guid: 1d8e60579602b6147bde1f7ccaff3110, type: 3}
       propertyPath: soundObj
@@ -8384,6 +8408,10 @@ PrefabInstance:
       propertyPath: dropSource
       value: 
       objectReference: {fileID: 1716638154}
+    - target: {fileID: 6260068470669437205, guid: e82aa45db2106f54abf60613d7db08b5, type: 3}
+      propertyPath: isGuidedMode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e82aa45db2106f54abf60613d7db08b5, type: 3}
 --- !u!4 &874384876 stripped
@@ -9763,6 +9791,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 399849635}
     m_Modifications:
+    - target: {fileID: 2947352842002863972, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
+      propertyPath: isGuidedMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4938284502189777971, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
       propertyPath: m_Name
       value: Interactable Fish
@@ -14131,6 +14163,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 399849635}
     m_Modifications:
+    - target: {fileID: 839913814558953669, guid: 3e21f9f348251814299e1e61b8896ebc, type: 3}
+      propertyPath: isGuidedMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4938284502189777971, guid: 3e21f9f348251814299e1e61b8896ebc, type: 3}
       propertyPath: m_Name
       value: Interactable Deer
@@ -14280,6 +14316,10 @@ PrefabInstance:
     - target: {fileID: 4938284502189777982, guid: 7a2c09a808dd7f443a3dab518964a050, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: PlayGrabSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 7756406091703188380, guid: 7a2c09a808dd7f443a3dab518964a050, type: 3}
+      propertyPath: isGuidedMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7889943356106517998, guid: 7a2c09a808dd7f443a3dab518964a050, type: 3}
       propertyPath: killInvasiveObj
@@ -16840,6 +16880,10 @@ PrefabInstance:
       propertyPath: dropSource
       value: 
       objectReference: {fileID: 1716638154}
+    - target: {fileID: 6260068470669437205, guid: e82aa45db2106f54abf60613d7db08b5, type: 3}
+      propertyPath: isGuidedMode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e82aa45db2106f54abf60613d7db08b5, type: 3}
 --- !u!4 &1714673540 stripped
@@ -21107,6 +21151,10 @@ PrefabInstance:
     - target: {fileID: 4938284502189777982, guid: 1d8e60579602b6147bde1f7ccaff3110, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: PlayGrabSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 5113017897059135757, guid: 1d8e60579602b6147bde1f7ccaff3110, type: 3}
+      propertyPath: isGuidedMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8985606386611497945, guid: 1d8e60579602b6147bde1f7ccaff3110, type: 3}
       propertyPath: soundObj

@@ -2608,14 +2608,6 @@ PrefabInstance:
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: PlayGrabSound
       objectReference: {fileID: 0}
-    - target: {fileID: 6259674473795939756, guid: 3e21f9f348251814299e1e61b8896ebc, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6259674474512508711, guid: 3e21f9f348251814299e1e61b8896ebc, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6420852876254579147, guid: 3e21f9f348251814299e1e61b8896ebc, type: 3}
       propertyPath: splashSoundObj
       value: 
@@ -3677,10 +3669,6 @@ PrefabInstance:
     - target: {fileID: 2582608868126370205, guid: e82aa45db2106f54abf60613d7db08b5, type: 3}
       propertyPath: m_Enabled
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3923368106201425334, guid: e82aa45db2106f54abf60613d7db08b5, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4260946497280562913, guid: e82aa45db2106f54abf60613d7db08b5, type: 3}
       propertyPath: killInvasiveObj
@@ -5499,10 +5487,6 @@ PrefabInstance:
       propertyPath: dropSource
       value: 
       objectReference: {fileID: 1716638154}
-    - target: {fileID: 8794141446602250528, guid: 7a2c09a808dd7f443a3dab518964a050, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a2c09a808dd7f443a3dab518964a050, type: 3}
 --- !u!4 &566685871 stripped
@@ -5841,14 +5825,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 399849635}
     m_Modifications:
-    - target: {fileID: 3748249430894259513, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3748249431276332978, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4938284502189777971, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
       propertyPath: m_Name
       value: Interactable Fish (2)
@@ -6105,14 +6081,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 399849635}
     m_Modifications:
-    - target: {fileID: 3748249430894259513, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3748249431276332978, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4938284502189777971, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
       propertyPath: m_Name
       value: Interactable Fish (1)
@@ -6737,14 +6705,6 @@ PrefabInstance:
     - target: {fileID: 4938284502189777982, guid: 1d8e60579602b6147bde1f7ccaff3110, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: PlayGrabSound
-      objectReference: {fileID: 0}
-    - target: {fileID: 8356343059413661689, guid: 1d8e60579602b6147bde1f7ccaff3110, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8356343059577634162, guid: 1d8e60579602b6147bde1f7ccaff3110, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8985606386611497945, guid: 1d8e60579602b6147bde1f7ccaff3110, type: 3}
       propertyPath: soundObj
@@ -8360,10 +8320,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 399849635}
     m_Modifications:
-    - target: {fileID: 3923368106201425334, guid: e82aa45db2106f54abf60613d7db08b5, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4260946497280562913, guid: e82aa45db2106f54abf60613d7db08b5, type: 3}
       propertyPath: killInvasiveObj
       value: 
@@ -9807,14 +9763,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 399849635}
     m_Modifications:
-    - target: {fileID: 3748249430894259513, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3748249431276332978, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4938284502189777971, guid: 4be7f6149ea6d7541b1b41ad6fcf917f, type: 3}
       propertyPath: m_Name
       value: Interactable Fish
@@ -14251,14 +14199,6 @@ PrefabInstance:
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: PlayGrabSound
       objectReference: {fileID: 0}
-    - target: {fileID: 6259674473795939756, guid: 3e21f9f348251814299e1e61b8896ebc, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6259674474512508711, guid: 3e21f9f348251814299e1e61b8896ebc, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6420852876254579147, guid: 3e21f9f348251814299e1e61b8896ebc, type: 3}
       propertyPath: splashSoundObj
       value: 
@@ -14349,10 +14289,6 @@ PrefabInstance:
       propertyPath: dropSource
       value: 
       objectReference: {fileID: 1716638154}
-    - target: {fileID: 8794141446602250528, guid: 7a2c09a808dd7f443a3dab518964a050, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a2c09a808dd7f443a3dab518964a050, type: 3}
 --- !u!4 &1490761840 stripped
@@ -16839,10 +16775,6 @@ PrefabInstance:
     - target: {fileID: 2582608868126370205, guid: e82aa45db2106f54abf60613d7db08b5, type: 3}
       propertyPath: m_Enabled
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3923368106201425334, guid: e82aa45db2106f54abf60613d7db08b5, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4260946497280562913, guid: e82aa45db2106f54abf60613d7db08b5, type: 3}
       propertyPath: killInvasiveObj
@@ -21175,14 +21107,6 @@ PrefabInstance:
     - target: {fileID: 4938284502189777982, guid: 1d8e60579602b6147bde1f7ccaff3110, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: PlayGrabSound
-      objectReference: {fileID: 0}
-    - target: {fileID: 8356343059413661689, guid: 1d8e60579602b6147bde1f7ccaff3110, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8356343059577634162, guid: 1d8e60579602b6147bde1f7ccaff3110, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8985606386611497945, guid: 1d8e60579602b6147bde1f7ccaff3110, type: 3}
       propertyPath: soundObj

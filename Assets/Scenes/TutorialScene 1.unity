@@ -4574,7 +4574,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5025473235295092833, guid: 4af16a612d64a844999ca7b86a6a4042, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: GuidedEnv
+      value: GuidedEnvDeco
       objectReference: {fileID: 0}
     - target: {fileID: 5025473235295092834, guid: 4af16a612d64a844999ca7b86a6a4042, type: 3}
       propertyPath: m_AnchorMax.y
@@ -4694,7 +4694,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6712265723093086240, guid: 4af16a612d64a844999ca7b86a6a4042, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: UnguidedEnv
+      value: UnguidedEnvDeco
       objectReference: {fileID: 0}
     - target: {fileID: 6712265723093086243, guid: 4af16a612d64a844999ca7b86a6a4042, type: 3}
       propertyPath: m_AnchorMax.y
